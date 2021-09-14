@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF6A4">
+
+        <ImageView
+            android:src="@mipmap/caring"
+            android:layout_marginEnd="20dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layoutDirection="rtl"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:background="@drawable/searchview_radius"
+            app:iconifiedByDefault="false"
+            app:queryHint="카잉 통합검색"
+            app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:background="#9E9999"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="카잉에서 한번에 견적부터 시공 예약까지! \n스텐다드 모듈 시공 50% 할인 진행중!"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/caringCNB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="16dp"
+        android:gravity="center"
+        app:cnb_menuResource="@menu/bottom_navigation" />
+
+
+</LinearLayout>
