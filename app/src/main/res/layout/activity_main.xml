@@ -14,46 +14,67 @@
         android:background="#FFF6A4">
 
         <ImageView
-            android:src="@mipmap/caring"
-            android:layout_marginEnd="20dp"
             android:layout_width="50dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:src="@mipmap/caring" />
+
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_view"
-            android:layoutDirection="rtl"
             android:layout_width="300dp"
             android:layout_height="30dp"
             android:background="@drawable/searchview_radius"
+            android:layoutDirection="rtl"
             app:iconifiedByDefault="false"
             app:queryHint="카잉 통합검색"
             app:searchIcon="@drawable/ic_baseline_search_24" />
 
     </androidx.appcompat.widget.Toolbar>
-    <TextView
-        android:background="#9E9999"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:text="카잉에서 한번에 견적부터 시공 예약까지! \n스텐다드 모듈 시공 50% 할인 진행중!"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"/>
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/caringCNB"
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="bottom|right"
+            android:background="@color/logo_yello"
+            android:backgroundTint="@color/logo_yello"
+            android:src="@drawable/ic_baseline_message_24"
+            app:borderWidth="0dp"
+            app:fabSize="mini" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCustom"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:backgroundTint="@color/logo_yello"
+            android:src="@drawable/ic_baseline_build_24"
+            app:borderWidth="0dp"
+            app:fabSize="mini" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabList"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:backgroundTint="@color/logo_yello"
+            android:src="@drawable/ic_baseline_view_list_24" />
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_gravity="bottom"
         android:background="@color/white"
-        android:elevation="16dp"
-        android:gravity="center"
-        app:cnb_menuResource="@menu/bottom_navigation" />
-
-
+        app:menu="@menu/navi_menu" />
 </LinearLayout>
