@@ -19,15 +19,24 @@
             android:layout_marginEnd="20dp"
             android:src="@mipmap/caring" />
 
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/search_view"
-            android:layout_width="300dp"
-            android:layout_height="30dp"
-            android:background="@drawable/searchview_radius"
-            android:layoutDirection="rtl"
-            app:iconifiedByDefault="false"
-            app:queryHint="카잉 통합검색"
-            app:searchIcon="@drawable/ic_baseline_search_24" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ACBSearch"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:background="@drawable/searchview_radius"
+                android:layoutDirection="rtl"
+                app:iconifiedByDefault="false" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/ic_baseline_search_24" />
+        </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 

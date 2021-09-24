@@ -9,12 +9,11 @@ import android.os.Bundle
 import android.os.Handler
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
@@ -77,6 +76,77 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 }
+class tendencyActivity: AppCompatActivity(){
+    val progressBar : ProgressBar by lazy{
+        findViewById<ProgressBar>(R.id.progressBar)
+    }
+    val beforeBtn : Button by lazy{
+        findViewById<Button>(R.id.beforeBtn)
+    }
+    val nextBtn : Button by lazy{
+        findViewById<Button>(R.id.nextBtn)
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_tendency)
+        setButtonClickEvent()
+        supportFragmentManager.beginTransaction().replace(R.id.RlProgress, FirstFragment()).commit()
+    }
+    private fun setButtonClickEvent(){
+        beforeBtn.setOnClickListener(onClick(beforeBtn))
+        nextBtn.setOnClickListener(onClick(nextBtn))
+    }
+    private fun onClick(view: View) = View.OnClickListener{
+        when(view){
+            beforeBtn ->{
+                if(progressBar.progress > 1) {
+                    progressBar.incrementProgressBy(-1)
+                    moveFlagment()
+                }
+            }
+        }
+        when(view){
+            nextBtn ->{
+                if(progressBar.progress < 3) {
+                    progressBar.incrementProgressBy(1)
+                    moveFlagment()
+                }
+                if(progressBar.progress == 3){
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+        }
+    }
+    private fun moveFlagment(){
+        when(progressBar.progress){
+            1 -> {
+                val firstFragment = FirstFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.RlProgress, firstFragment).commit()
+            }
+            2 ->{
+                val secondFragment = secondFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.RlProgress, secondFragment).commit()
+            }
+            3 ->{
+                val thirdFragment = thirdFragment()
+                supportFragmentManager.beginTransaction().replace(R.id.RlProgress, thirdFragment).commit()
+            }
+        }
+    }
+}
+
+class searchActivity : AppCompatActivity(){
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_search)
+        overridePendingTransition(0,0)
+    }
+    override fun onBackPressed() {
+        super.onBackPressed() //막고 싶으면 여기 주석처리
+        overridePendingTransition(0,0)
+    }
+}
 
 class signUpActivity : AppCompatActivity() {
     val emailValid = Regex("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}\$")
@@ -97,7 +167,7 @@ class signUpActivity : AppCompatActivity() {
             if (!checkEmail()) {
                 Toast.makeText(applicationContext, "이메일 형식에 맞게 입력하세요!!", Toast.LENGTH_LONG).show()
             } else {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, tendencyActivity::class.java)
                 startActivity(intent)
                 Toast.makeText(this, "회원가입이 완료되었습니다. ", Toast.LENGTH_LONG).show()
             }
@@ -131,6 +201,9 @@ class signUpActivity : AppCompatActivity() {
 }
 
 class MainActivity : AppCompatActivity() {
+    private val ACBsearch : AppCompatButton by lazy{
+        findViewById<AppCompatButton>(R.id.ACBSearch)
+    }
     private val fabList : FloatingActionButton by lazy{
         findViewById<FloatingActionButton>(R.id.fabList)
     }
@@ -145,9 +218,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // 플로팅 토글
         fabList.setOnClickListener{
             toggleFab()
         }
+
+        // 검색바 액티비티 전환
+        ACBsearch.setOnClickListener{
+            val intent = Intent(this, searchActivity::class.java)
+            startActivity(intent)
+        }
+
         //하단 버튼
         var bnv = findViewById(R.id.bnv) as BottomNavigationView
         bnv.run { setOnNavigationItemSelectedListener {
