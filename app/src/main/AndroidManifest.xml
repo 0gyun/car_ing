@@ -10,15 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Car_ing">
         <activity
+            android:name=".ChatRoomActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tendencyActivity"/>
-        <activity android:name=".searchActivity"/>
+        <activity android:name=".tendencyActivity" />
+        <activity android:name=".searchActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".signUpActivity" />

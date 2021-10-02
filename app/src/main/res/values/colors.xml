@@ -17,5 +17,6 @@
     <color name="navigation_color_message">#1194AA</color>
     <color name="navigation_color_store">#FF52BF</color>
     <color name="kakao_bg">#FFEB3B</color>
+    <color name="tendeny_bg">#1E81CF</color>
     <color name="facebook">#00B0FF</color>
 </resources>
