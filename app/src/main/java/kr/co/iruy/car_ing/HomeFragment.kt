@@ -50,10 +50,8 @@ class HomeFragment : Fragment() {
 
         var adapter = SectionPagerAdapter(fragmentManager)
         adapter.addFragment(RecommendFragment(), "추천")
-        adapter.addFragment(TrendFragment(),"트랜드")
         adapter.addFragment(PlazaFragment(),"광장")
-        adapter.addFragment(EditorFragment(),"에디터")
-        adapter.addFragment(StudyFragment(),"학습")
+        adapter.addFragment(StudyFragment(),"스쿨")
 
         viewPagers!!.adapter = adapter
         tabLayouts!!.setupWithViewPager(viewPagers)

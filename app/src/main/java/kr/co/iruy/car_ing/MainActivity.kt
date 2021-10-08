@@ -285,9 +285,7 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         val fragment = when (position) {
             0 -> RecommendFragment.newInstant()
             1 -> PlazaFragment.newInstant()
-            2 -> EditorFragment.newInstant()
-            3 -> TrendFragment.newInstant()
-            4 -> StudyFragment.newInstant()
+            2 -> StudyFragment.newInstant()
             else -> RecommendFragment.newInstant()
         }
         return fragment
@@ -297,12 +295,10 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getPageTitle(position: Int): CharSequence? {
         val title = when (position) {
-            0 -> "맞춤추천"
+            0 -> "추천"
             1 -> "광장"
-            2 -> "에디터"
-            3 -> "트랜드"
-            4 -> "학습"
-            else -> "맞춤추천"
+            2 -> "스쿨"
+            else -> "추천"
         }
         return title
     }
