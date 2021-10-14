@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Car_ing">
         <activity
+            android:name=".FeedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PhotoActivity"
+            android:exported="true" />
+        <activity
             android:name=".ChatRoomActivity"
             android:exported="false" />
         <activity

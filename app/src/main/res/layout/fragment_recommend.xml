@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".PlazaFragment">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -20,398 +21,187 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:id="@+id/today_info"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <ImageView
-                    android:id="@+id/today_img"
-                    android:layout_width="350dp"
-                    android:layout_height="350dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/searchview_radius" />
-
-                <TextView
-                    android:id="@+id/today_recommend"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/today_img"
-                    android:layout_alignTop="@+id/today_img"
-                    android:layout_alignRight="@+id/today_img"
-                    android:layout_alignBottom="@+id/today_img"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="오늘의 추천" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/today_img"
-                    android:layout_alignTop="@+id/today_recommend"
-                    android:layout_alignRight="@+id/today_img"
-                    android:layout_alignBottom="@+id/today_img"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
-                    android:text="차박 컨텐츠"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:fontFamily="@font/baeminfont"
-                android:text="오늘의 카잉"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/bom1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="태그"
-                            android:textColor="@color/design_default_color_primary_dark" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="제목" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/searchview_radius"
-                android:text="스토리 더보기" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:background="#D6D5D5" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_weight="3"
-                    android:fontFamily="@font/baeminfont"
-                    android:text="인기사진 TOP 10"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_baseline_camera_alt_24" />
-            </LinearLayout>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bom1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="오늘은?"
+                        android:textSize="20dp" />
 
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bom1" />
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bom1" />
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bom1" />
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/bom1" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:text="더보기"
+                        android:textAlignment="textEnd" />
                 </LinearLayout>
-            </HorizontalScrollView>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="#CDDB31" />
+
+                <RelativeLayout
+                    android:id="@+id/today_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/today_img"
+                                    android:layout_width="370dp"
+                                    android:layout_height="300dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="@drawable/searchview_radius" />
+
+                                <TextView
+                                    android:id="@+id/today_recommend"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/today_img"
+                                    android:layout_alignTop="@+id/today_img"
+                                    android:layout_alignRight="@+id/today_img"
+                                    android:layout_alignBottom="@+id/today_img"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="오늘의 추천"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/today_img"
+                                    android:layout_alignTop="@+id/today_recommend"
+                                    android:layout_alignRight="@+id/today_img"
+                                    android:layout_alignBottom="@+id/today_img"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="차박 컨텐츠"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/today_img"
+                                    android:layout_alignBottom="@+id/today_img"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="단돈 만원으로 즐기는 행복 차박"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="장인을 만나다?"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="더보기"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:background="#CDDB31" />
+            <RelativeLayout
+                android:id="@+id/meetMasterRL"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/meetMasterIV"
+                                android:layout_width="370dp"
+                                android:layout_height="300dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/searchview_radius" />
+
+                            <TextView
+                                android:id="@+id/masterSaying"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/meetMasterIV"
+                                android:layout_alignBottom="@+id/meetMasterIV"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="이사람 래핑 잘해요"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignEnd="@id/meetMasterIV"
+                                android:layout_alignBottom="@id/meetMasterIV"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/ic_baseline_bookmark_24" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

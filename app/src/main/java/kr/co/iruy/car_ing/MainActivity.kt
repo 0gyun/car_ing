@@ -1,6 +1,5 @@
 package kr.co.iruy.car_ing
 
-import android.animation.ObjectAnimator
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
@@ -13,12 +12,10 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.textfield.TextInputEditText
 
 class SplashActivity : AppCompatActivity() {
@@ -201,30 +198,16 @@ class signUpActivity : AppCompatActivity() {
 }
 
 class MainActivity : AppCompatActivity() {
-    private val ACBsearch : AppCompatButton by lazy{
-        findViewById<AppCompatButton>(R.id.ACBSearch)
-    }
-    private val fabList : FloatingActionButton by lazy{
-        findViewById<FloatingActionButton>(R.id.fabList)
-    }
-    private val fabMsg : FloatingActionButton by lazy{
-        findViewById<FloatingActionButton>(R.id.fabMsg)
-    }
-    private val fabCustom : FloatingActionButton by lazy{
-        findViewById<FloatingActionButton>(R.id.fabCustom)
+    private val IMGsearch : ImageButton by lazy{
+        findViewById<ImageButton>(R.id.IMGSearch)
     }
     private var isFabOpen = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 플로팅 토글
-        fabList.setOnClickListener{
-            toggleFab()
-        }
-
         // 검색바 액티비티 전환
-        ACBsearch.setOnClickListener{
+        IMGsearch.setOnClickListener{
             val intent = Intent(this, searchActivity::class.java)
             startActivity(intent)
         }
@@ -261,18 +244,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun toggleFab(){
-        if (isFabOpen){
-            ObjectAnimator.ofFloat(fabCustom,"translationY",0f).apply { start() }
-            ObjectAnimator.ofFloat(fabMsg,"translationY",0f).apply { start() }
-            isFabOpen = false
-        }
-        else {
-            ObjectAnimator.ofFloat(fabCustom,"translationY",-175f).apply { start() }
-            ObjectAnimator.ofFloat(fabMsg,"translationY",-300f).apply { start() }
-            isFabOpen = true
-        }
-    }
     // 뒤로 가기 버튼 막기
     override fun onBackPressed() {
         super.onBackPressed() //막고 싶으면 여기 주석처리

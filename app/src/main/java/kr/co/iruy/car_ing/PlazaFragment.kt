@@ -1,9 +1,11 @@
 package kr.co.iruy.car_ing
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 
 class PlazaFragment : Fragment() {
@@ -12,7 +14,13 @@ class PlazaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_plaza, container, false)
+        val v : View = inflater.inflate(R.layout.fragment_plaza,container,false)
+        val plazaIB = v.findViewById<ImageButton>(R.id.plazaIB)
+        plazaIB.setOnClickListener {
+            val intent = Intent(activity, FeedActivity::class.java)
+            startActivity(intent)
+        }
+        return v
     }
     companion object{
         fun newInstant() : PlazaFragment

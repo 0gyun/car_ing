@@ -8,6 +8,10 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import kr.co.iruy.car_ing.PlazaFragment;
+import kr.co.iruy.car_ing.RecommendFragment;
+import kr.co.iruy.car_ing.StudyFragment;
+
 public class SectionPagerAdapter extends FragmentPagerAdapter {
 
     private List<Fragment> fragmentList = new ArrayList<>();
@@ -18,7 +22,17 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
     }
     @Override
     public Fragment getItem(int position) {
-        return  fragmentList.get(position);
+        switch (position)
+        {
+            case 0:
+                return new RecommendFragment();
+            case 1:
+                return new PlazaFragment();
+            case 2:
+                return new StudyFragment();
+            default:
+                return new RecommendFragment();
+        }
     }
 
     @Override

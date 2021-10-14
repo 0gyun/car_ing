@@ -11,33 +11,34 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FFF6A4">
+        android:background="@color/white">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
             android:src="@mipmap/caring" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/ACBSearch"
-                android:layout_width="300dp"
+            <ImageButton
+                android:id="@+id/IMGSearch"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
-                android:background="@drawable/searchview_radius"
+                android:background="@drawable/search_yellow_view"
                 android:layoutDirection="rtl"
+                android:paddingLeft="250dp"
+                android:src="@drawable/ic_baseline_search_white"
                 app:iconifiedByDefault="false" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:paddingLeft="10dp"
-                app:srcCompat="@drawable/ic_baseline_search_24" />
         </RelativeLayout>
 
+        <ImageView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_notifications_24" />
     </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
@@ -45,38 +46,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabMsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_gravity="bottom|right"
-            android:background="@color/logo_yello"
-            android:backgroundTint="@color/logo_yello"
-            android:src="@drawable/ic_baseline_message_24"
-            app:borderWidth="0dp"
-            app:fabSize="mini" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabCustom"
-            android:layout_margin="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:backgroundTint="@color/logo_yello"
-            android:src="@drawable/ic_baseline_build_24"
-            app:borderWidth="0dp"
-            app:fabSize="mini" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabList"
-            android:layout_margin="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:backgroundTint="@color/logo_yello"
-            android:src="@drawable/ic_baseline_view_list_24" />
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

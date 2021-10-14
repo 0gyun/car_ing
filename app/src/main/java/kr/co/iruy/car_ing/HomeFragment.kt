@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
         return myFragment
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
         setUpViewPager()
@@ -48,12 +48,10 @@ class HomeFragment : Fragment() {
         viewPagers = myFragment.findViewById(R.id.viewPager)
         tabLayouts = myFragment.findViewById(R.id.tabLayout)
 
-        var adapter = SectionPagerAdapter(fragmentManager)
+        var adapter = SectionPagerAdapter(childFragmentManager)
         adapter.addFragment(RecommendFragment(), "추천")
-        adapter.addFragment(TrendFragment(),"트랜드")
         adapter.addFragment(PlazaFragment(),"광장")
-        adapter.addFragment(EditorFragment(),"에디터")
-        adapter.addFragment(StudyFragment(),"학습")
+        adapter.addFragment(StudyFragment(),"스쿨")
 
         viewPagers!!.adapter = adapter
         tabLayouts!!.setupWithViewPager(viewPagers)
