@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/logo_yello"
+    android:background="@color/caring_main"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.48" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/align_logo"
         android:layout_width="60dp"
         android:layout_height="30dp"
         android:layout_marginTop="100dp"

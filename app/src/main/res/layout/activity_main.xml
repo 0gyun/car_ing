@@ -10,18 +10,18 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#FFF6A4">
+        android:layout_height="70dp">
 
         <ImageView
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="20dp"
             android:src="@mipmap/caring" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ACBSearch"
@@ -52,8 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:layout_gravity="bottom|right"
-            android:background="@color/logo_yello"
-            android:backgroundTint="@color/logo_yello"
+            android:background="@color/caring_main"
+            android:backgroundTint="@color/caring_main"
             android:src="@drawable/ic_baseline_message_24"
             app:borderWidth="0dp"
             app:fabSize="mini" />
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
-            android:backgroundTint="@color/logo_yello"
+            android:backgroundTint="@color/caring_main"
             android:src="@drawable/ic_baseline_build_24"
             app:borderWidth="0dp"
             app:fabSize="mini" />
@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:backgroundTint="@color/logo_yello"
+            android:backgroundTint="@color/caring_main"
             android:src="@drawable/ic_baseline_view_list_24" />
     </FrameLayout>
 
@@ -85,5 +85,6 @@
         android:layout_height="50dp"
         android:layout_gravity="bottom"
         android:background="@color/white"
-        app:menu="@menu/navi_menu" />
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"       app:menu="@menu/navi_menu" />
 </LinearLayout>

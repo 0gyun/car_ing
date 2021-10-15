@@ -223,9 +223,14 @@ class MainActivity : AppCompatActivity() {
             toggleFab()
         }
 
+        fabMsg.setOnClickListener {
+            val messageFragment = MessageFragment()
+            supportFragmentManager.beginTransaction().replace(R.id.fl_container, messageFragment).commit()
+        }
+
         // 검색바 액티비티 전환
         ACBsearch.setOnClickListener{
-            val intent = Intent(this, searchActivity::class.java)
+            val intent = Intent(this, MessageActivity::class.java)
             startActivity(intent)
         }
 
@@ -284,7 +289,7 @@ class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getItem(position: Int): Fragment {
         val fragment = when (position) {
             0 -> RecommendFragment.newInstant()
-            1 -> PlazaFragment.newInstant()
+            1 -> SqaureFragment.newInstant()
             2 -> StudyFragment.newInstant()
             else -> RecommendFragment.newInstant()
         }

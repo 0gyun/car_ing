@@ -48,9 +48,9 @@ class HomeFragment : Fragment() {
         viewPagers = myFragment.findViewById(R.id.viewPager)
         tabLayouts = myFragment.findViewById(R.id.tabLayout)
 
-        var adapter = SectionPagerAdapter(fragmentManager)
+        var adapter = SectionPagerAdapter(childFragmentManager)
         adapter.addFragment(RecommendFragment(), "추천")
-        adapter.addFragment(PlazaFragment(),"광장")
+        adapter.addFragment(SqaureFragment(),"광장")
         adapter.addFragment(StudyFragment(),"스쿨")
 
         viewPagers!!.adapter = adapter

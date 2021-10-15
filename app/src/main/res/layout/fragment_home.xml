@@ -39,11 +39,19 @@
         android:layout_width="match_parent"
         android:background="@color/white"
         android:layout_height="wrap_content">
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </com.google.android.material.tabs.TabLayout>
+            android:layout_height="wrap_content"
+            app:tabGravity="start"
+            app:tabIconTint="@drawable/menu_selector_color"
+            app:tabIndicatorColor="@color/caring_main_tonedown2"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/caring_main_tonedown2"></com.google.android.material.tabs.TabLayout>
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
