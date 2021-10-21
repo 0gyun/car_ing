@@ -23,7 +23,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="@color/caring_warm_grey5"
+                app:cardBackgroundColor="@color/caring_blue_grey5"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp"
                 android:layout_width="344dp"
@@ -41,7 +41,7 @@
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
-                        app:cardBackgroundColor="@color/caring_warm_grey2"
+                        app:cardBackgroundColor="@color/caring_blue_grey2"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="20dp"
                         app:contentPadding="10dp">
@@ -49,7 +49,7 @@
                         <androidx.cardview.widget.CardView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            app:cardBackgroundColor="@color/caring_warm_grey5"
+                            app:cardBackgroundColor="@color/caring_blue_grey5"
                             app:cardCornerRadius="90dp">
 
                             <ImageView
@@ -90,7 +90,7 @@
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
                                 app:srcCompat="@drawable/ic_baseline_message_24"
-                                app:tint="@color/caring_warm_grey5" />
+                                app:tint="@color/caring_blue_grey5" />
 
                             <TextView
                                 android:layout_width="wrap_content"

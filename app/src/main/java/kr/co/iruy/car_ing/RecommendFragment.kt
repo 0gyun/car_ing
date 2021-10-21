@@ -20,12 +20,12 @@ class RecommendFragment : Fragment() {
         // Inflate the layout for this fragment
         // fragment_recommend를 inflate하고 그 안에 ViewPager를 adapter를 통해 image 넘길 수 있게
         val view = inflater.inflate(R.layout.fragment_recommend, container, false)
-        val viewPager = view.findViewById<ViewPager>(R.id.view_pager)
-        val viewPager2 = view.findViewById<ViewPager>(R.id.itemViewPager)
-        val adapter = ViewPagerAdapter(requireContext())
-        val item_adapter = ItemViewPagerAdapter(requireContext())
-        viewPager.adapter = adapter
-        viewPager2.adapter = item_adapter
+//        val viewPager = view.findViewById<ViewPager>(R.id.view_pager)
+//        val viewPager2 = view.findViewById<ViewPager>(R.id.itemViewPager)
+//        val adapter = ViewPagerAdapter(requireContext())
+//        val item_adapter = ItemViewPagerAdapter(requireContext())
+//        viewPager.adapter = adapter
+//        viewPager2.adapter = item_adapter
         return view
     }
     companion object{
