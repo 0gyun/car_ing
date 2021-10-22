@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Search button icon -->
+    <style name="MySearchViewStyle">
+        <item name="searchIcon">@drawable/ic_baseline_search_24</item>
+    </style>
+    <style name="TabText" parent="TextAppearance.Design.Tab">
+        <item name="fontFamily">@font/baeminfont</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+</resources>
