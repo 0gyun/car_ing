@@ -201,9 +201,6 @@ class signUpActivity : AppCompatActivity() {
 }
 
 class MainActivity : AppCompatActivity() {
-    private val ACBsearch : AppCompatButton by lazy{
-        findViewById<AppCompatButton>(R.id.ACBSearch)
-    }
     private val fabList : FloatingActionButton by lazy{
         findViewById<FloatingActionButton>(R.id.fabList)
     }
@@ -226,12 +223,6 @@ class MainActivity : AppCompatActivity() {
         fabMsg.setOnClickListener {
             val messageFragment = MessageFragment()
             supportFragmentManager.beginTransaction().replace(R.id.fl_container, messageFragment).commit()
-        }
-
-        // 검색바 액티비티 전환
-        ACBsearch.setOnClickListener{
-            val intent = Intent(this, MessageActivity::class.java)
-            startActivity(intent)
         }
 
         //하단 버튼
