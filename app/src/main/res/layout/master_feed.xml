@@ -22,7 +22,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="258dp"
+                android:layout_height="360dp"
                 android:background="@drawable/sample_master"
                 android:padding="20dp">
 
@@ -30,10 +30,10 @@
                     android:id="@+id/master_back_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    app:tint="@color/white"
                     android:layout_alignStart="@id/master_topic_feed"
-                    app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/white" />
 
                 <TextView
                     android:id="@+id/master_topic_feed"
@@ -41,7 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_above="@id/master_title_feed"
                     android:text="장인을 만나다"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/master_title_feed"
@@ -53,6 +54,7 @@
                     android:text="독일 수입차 전문 20년"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="@color/white"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -63,7 +65,7 @@
                     android:layout_alignParentBottom="true"
                     android:text="by editor"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/master_editor_name"
@@ -74,6 +76,7 @@
                     android:layout_toRightOf="@id/master_editor_feed"
                     android:text="SONYA"
                     android:textColor="@color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
@@ -85,8 +88,8 @@
 
                     <ImageView
                         android:id="@+id/master_profile"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         tools:srcCompat="@tools:sample/avatars" />
                 </androidx.cardview.widget.CardView>
 
@@ -103,27 +106,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:padding="5dp"
+                    android:padding="10dp"
                     android:text="Q: 안녕하세요, 김진수 장인님. 올해로 20주년을 맞이하셨다고 들었어요. 소감이 어떠신가요?"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
+
                 <TextView
                     android:id="@+id/master_maintext2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:padding="5dp"
+                    android:padding="10dp"
                     android:text="A: 감개무량합니다. 모두 단골 고객분들 덕분이죠. 요즘 카잉으로 신규 고객분들이 많이 찾아와 주셔서 더욱 재미있게 일하고 있습니다."
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="258dp"
-                android:background="@drawable/sample_master_more"
-                android:padding="10dp">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/sample_master_more" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -131,6 +140,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:paddingBottom="20dp"
                     android:text='"20년 전과 지금은 자동차 문화가 많이 달라요.\n점점 자신만의 개성을 표현하는 경향이\n강해지고 있습니다."'
                     android:textAlignment="textEnd"
                     android:textColor="@color/white"
