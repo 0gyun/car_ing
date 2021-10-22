@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/recommendBT" app:showAsAction="ifRoom" android:enabled="true" android:title="추천" />
-    <item android:id="@+id/trendBT" app:showAsAction="ifRoom" android:title="트랜드" />
-    <item android:id="@+id/plazaBT" app:showAsAction="ifRoom" android:title="광장" />
-    <item android:id="@+id/editorBT" app:showAsAction="ifRoom" android:title="에디터" />
-    <item android:id="@+id/studyBT" app:showAsAction="ifRoom" android:title="" />
-</menu>
