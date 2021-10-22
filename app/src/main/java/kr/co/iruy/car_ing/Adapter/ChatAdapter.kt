@@ -14,7 +14,9 @@ import kr.co.iruy.car_ing.R
 class ChatAdapter(val context: Context, val arrayList: ArrayList<ChatModel>):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     internal lateinit var preferences: SharedPreferences
     fun addItem(item: ChatModel){
+        if(arrayList != null){
             arrayList.add(item)
+        }
     }
     override fun onCreateViewHolder(parent:ViewGroup,viewType:Int):
             RecyclerView.ViewHolder{

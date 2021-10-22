@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PlazaFragment">
-
+    tools:context=".SqaureFragment">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,189 +21,429 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="20dp"
-                        android:text="오늘은?"
-                        android:textSize="20dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:text="더보기"
-                        android:textAlignment="textEnd" />
-                </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/today"
+                android:layout_width="344dp"
+                android:layout_height="258dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/caring_blue_grey3"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
 
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="3dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="-10dp"
-                    android:background="#CDDB31" />
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sample_today" />
 
                 <RelativeLayout
-                    android:id="@+id/today_info"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <HorizontalScrollView
+                    <TextView
+                        android:id="@+id/today_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="오늘은?"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/today_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/today_topic"
+                        android:layout_alignLeft="@id/today_topic"
+                        android:paddingTop="5dp"
+                        android:text="그릴에 추억 굽는 중"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="267dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/today_topic"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="10dp"
+                        android:text="정든 내 차와 함께 떠나는 캠핑. 오늘 카잉 매거진에서는 떠나고 싶지만 무얼 준비해야 할 지 몰라 망설이는 당신에게 차박의 모든 것을 알려주기 위해 특집 기사를 준비했다."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/master"
+                app:cardBackgroundColor="@color/caring_blue_grey5"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                android:layout_width="344dp"
+                android:layout_height="344dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sample_master"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/master_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="장인을 만나다"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/master_title"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/master_topic"
+                        android:layout_alignLeft="@id/master_topic"
+                        android:layout_marginTop="5dp"
+                        android:text="독일 수입차 전문 20년"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/master_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/master_about"
+                        android:layout_alignLeft="@id/master_topic"
+                        android:layout_alignParentBottom="false"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:text="BMW, 벤츠, 아우디, 폭스바겐...\n독일 자동차만 전문으로 진행한\n개업 20주년 튜닝샵을 소개합니다."
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
 
-                            <RelativeLayout
+                    <Button
+                        android:id="@+id/master_btn"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_above="@id/master_about"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="false"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/caring_main"
+                        android:text="더 알아보기"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/master_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/shop_photo"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="10dp">
 
                                 <ImageView
-                                    android:id="@+id/today_img"
-                                    android:layout_width="370dp"
-                                    android:layout_height="300dp"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_marginBottom="20dp"
-                                    android:background="@drawable/searchview_radius" />
+                                    android:id="@+id/shop_image"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@color/caring_blue_grey5"
+                                    tools:srcCompat="@tools:sample/avatars" />
+                            </androidx.cardview.widget.CardView>
 
-                                <TextView
-                                    android:id="@+id/today_recommend"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignLeft="@+id/today_img"
-                                    android:layout_alignTop="@+id/today_img"
-                                    android:layout_alignRight="@+id/today_img"
-                                    android:layout_alignBottom="@+id/today_img"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="10dp"
-                                    android:text="오늘의 추천"
-                                    android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/shop_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_toRightOf="@id/shop_photo"
+                                android:text="튜닝샵 이름"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignLeft="@+id/today_img"
-                                    android:layout_alignTop="@+id/today_recommend"
-                                    android:layout_alignRight="@+id/today_img"
-                                    android:layout_alignBottom="@+id/today_img"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="20dp"
-                                    android:text="차박 컨텐츠"
-                                    android:textColor="@color/black"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/shop_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/shop_name"
+                                android:layout_alignLeft="@id/shop_name"
+                                android:text="서울 강북"
+                                android:textSize="10sp" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignLeft="@+id/today_img"
-                                    android:layout_alignBottom="@+id/today_img"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="단돈 만원으로 즐기는 행복 차박"
-                                    android:textColor="@color/white"
-                                    android:textSize="15dp"
-                                    android:textStyle="bold" />
-                            </RelativeLayout>
+                            <TextView
+                                android:id="@+id/shop_main"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="30dp"
+                                android:layout_toRightOf="@id/shop_name"
+                                android:text="전문분야/전문분야/전문분야"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
 
-                        </LinearLayout>
-                    </HorizontalScrollView>
+                    </androidx.cardview.widget.CardView>
                 </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이 달의 카잉_10월"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="user_example"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="344dp"
+                    android:layout_height="344dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:clickable="true"
+                    android:elevation="20dp"
+                    app:cardBackgroundColor="@color/caring_blue_grey5"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/caring_blue_grey2"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp"
+                            app:contentPadding="10dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/caring_blue_grey5"
+                                app:cardCornerRadius="90dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:srcCompat="@tools:sample/avatars" />
+                            </androidx.cardview.widget.CardView>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_gravity="bottom"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:layout_width="16dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_baseline_bookmark_24"
+                                    app:tint="@color/caring_blue_grey5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="2k" />
+
+                                <ImageButton
+                                    android:layout_width="24dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_baseline_message_24"
+                                    app:tint="@color/caring_blue_grey5" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="467" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
-                    android:text="장인을 만나다?"
-                    android:textSize="20dp" />
-
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
-                    android:text="더보기"
-                    android:textAlignment="textEnd" />
-            </LinearLayout>
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="3dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="-10dp"
-                android:background="#CDDB31" />
-            <RelativeLayout
-                android:id="@+id/meetMasterRL"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="에센셜"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="bold" />
 
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView13"
+                        android:text="스마트폰 거치대는 카잉에서"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
 
-                            <ImageButton
-                                android:id="@+id/meetMasterIV"
-                                android:layout_width="370dp"
-                                android:layout_height="300dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="20dp"
-                                android:layout_marginBottom="20dp"
-                                android:background="@drawable/searchview_radius" />
+                </RelativeLayout>
 
-                            <TextView
-                                android:id="@+id/masterSaying"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignLeft="@+id/meetMasterIV"
-                                android:layout_alignBottom="@+id/meetMasterIV"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginBottom="10dp"
-                                android:text="이사람 래핑 잘해요"
-                                android:textColor="@color/white"
-                                android:textSize="20dp"
-                                android:textStyle="bold" />
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    app:columnCount="3"
+                    app:rowCount="3">
 
-                            <androidx.appcompat.widget.AppCompatButton
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_alignEnd="@id/meetMasterIV"
-                                android:layout_alignBottom="@id/meetMasterIV"
-                                android:layout_marginRight="15dp"
-                                android:layout_marginBottom="15dp"
-                                android:background="@drawable/ic_baseline_bookmark_24" />
-                        </RelativeLayout>
-                    </LinearLayout>
-                </HorizontalScrollView>
-            </RelativeLayout>
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c4" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c5" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/car4" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c1" />
+                </androidx.gridlayout.widget.GridLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

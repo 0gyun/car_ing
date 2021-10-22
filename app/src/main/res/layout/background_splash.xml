@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/logo_yello"
+    android:background="@color/caring_main"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/caring_logo"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="284dp"
+        android:layout_height="92dp"
         android:layout_centerInParent="true"
         android:contentDescription="@string/app_name"
         android:src="@drawable/caring"
@@ -20,6 +20,18 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40" />
+        app:layout_constraintVertical_bias="0.48" />
+
+    <ImageView
+        android:id="@+id/align_logo"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/align_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

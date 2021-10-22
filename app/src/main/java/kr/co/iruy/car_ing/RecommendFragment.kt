@@ -5,20 +5,37 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
+import android.widget.Button
+import android.widget.ListView
+import android.widget.SimpleAdapter
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager.widget.ViewPager
+import kr.co.iruy.car_ing.Adapter.ItemViewPagerAdapter
+import kr.co.iruy.car_ing.Adapter.ViewPagerAdapter
+
 class RecommendFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val v : View = inflater.inflate(R.layout.fragment_recommend,container,false)
-        val imageView = v.findViewById<ImageButton>(R.id.meetMasterIV)
-        imageView.setOnClickListener {
-            val intent = Intent(activity,PhotoActivity::class.java)
-            startActivity(intent)
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_recommend, container, false)
+
+        val today = view.findViewById<CardView>(R.id.today)
+        today.setOnClickListener{
+            val intent = Intent(getActivity(), TodayFeed::class.java)
+            getActivity()?.startActivity(intent)
         }
-        return v
+
+        val master = view.findViewById<Button>(R.id.master_btn)
+        master.setOnClickListener{
+            val intent =Intent(getActivity(), MasterFeed::class.java)
+            getActivity()?.startActivity(intent)
+        }
+
+        return view
     }
     companion object{
         fun newInstant() : RecommendFragment
