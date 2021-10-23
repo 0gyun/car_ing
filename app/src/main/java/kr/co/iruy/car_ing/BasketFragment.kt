@@ -1,34 +1,32 @@
 package kr.co.iruy.car_ing
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
+class BasketFragment : Fragment() {
 
-class SqaureFragment : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val v : View = inflater.inflate(R.layout.fragment_square,container,false)
-        val squareCV = v.findViewById<CardView>(R.id.squareCV)
-        squareCV.setOnClickListener {
-            val intent = Intent(activity, FeedActivity::class.java)
-            startActivity(intent)
-        }
-        return v
+        return inflater.inflate(R.layout.fragment_basket, container, false)
     }
+
     companion object{
-        fun newInstant() : SqaureFragment
+        fun newInstant() : BasketFragment
         {
             val args = Bundle()
-            val frag = SqaureFragment()
+            val frag = BasketFragment()
             frag.arguments = args
             return frag
         }
     }
+
 }
