@@ -26,7 +26,6 @@
             android:paddingTop="5dp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/squareCV"
                 android:layout_width="440dp"
                 android:layout_height="440dp"
                 android:layout_gravity="center"
