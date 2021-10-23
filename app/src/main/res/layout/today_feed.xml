@@ -22,7 +22,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="258dp"
+                android:layout_height="360dp"
                 android:background="@drawable/sample_today"
                 android:padding="20dp">
 
@@ -30,10 +30,10 @@
                     android:id="@+id/today_back_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    app:tint="@color/white"
                     android:layout_alignLeft="@id/today_topic_feed"
-                    app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/white" />
 
                 <TextView
                     android:id="@+id/today_topic_feed"
@@ -41,7 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_above="@id/today_title_feed"
                     android:text="오늘은?"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/today_title_feed"
@@ -49,10 +50,11 @@
                     android:layout_height="wrap_content"
                     android:layout_above="@id/today_editor_name"
                     android:layout_alignLeft="@id/today_topic_feed"
-                    android:text="그릴에 추억 굽는 중"
                     android:layout_marginBottom="10dp"
+                    android:text="그릴에 추억 굽는 중"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textColor="@color/white"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -63,7 +65,7 @@
                     android:layout_alignParentBottom="true"
                     android:text="by editor"
                     android:textColor="@color/white"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/today_editor_name"
@@ -74,6 +76,7 @@
                     android:layout_toRightOf="@id/today_editor_feed"
                     android:text="SONYA"
                     android:textColor="@color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
@@ -85,8 +88,8 @@
 
                     <ImageView
                         android:id="@+id/today_profile"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         tools:srcCompat="@tools:sample/avatars" />
                 </androidx.cardview.widget.CardView>
 
@@ -109,12 +112,12 @@
 
                 <TextView
                     android:id="@+id/today_maintext"
-                    android:layout_width="279dp"
+                    android:layout_width="400dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="정든 내 차와 함께 떠나는 캠핑. 오늘 카잉 매거진에서는 떠나고 싶지만 무얼 준비해야 할 지 몰라 망설이는 당신에게 차박의 모든 것을 알려주기 위해 특집 기사를 준비했다."
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/todat_lower"
@@ -128,7 +131,7 @@
 
                 <ImageView
                     android:id="@+id/today_maintext_img"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     app:srcCompat="@drawable/sample_today_more" />

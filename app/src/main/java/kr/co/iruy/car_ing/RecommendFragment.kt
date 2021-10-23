@@ -6,14 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ListView
-import android.widget.SimpleAdapter
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
-import kr.co.iruy.car_ing.Adapter.ItemViewPagerAdapter
-import kr.co.iruy.car_ing.Adapter.ViewPagerAdapter
 
 class RecommendFragment : Fragment() {
     override fun onCreateView(

@@ -51,7 +51,8 @@
             app:tabIndicatorGravity="bottom"
             app:tabIndicatorHeight="4dp"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="@color/caring_main_tonedown2"></com.google.android.material.tabs.TabLayout>
+            app:tabSelectedTextColor="@color/caring_main_tonedown2"
+            app:tabTextAppearance="@style/TabText"/>
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
