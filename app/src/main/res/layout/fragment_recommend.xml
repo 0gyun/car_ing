@@ -6,32 +6,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SqaureFragment">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
+        android:paddingTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:paddingTop="5dp">
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/today"
-                android:layout_width="440dp"
-                android:layout_height="360dp"
+                android:layout_width="344dp"
+                android:layout_height="258dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"
                 android:clickable="true"
@@ -43,25 +40,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitXY"
                     android:src="@drawable/sample_today" />
 
                 <RelativeLayout
+                    android:background="@android:color/transparent"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@android:color/transparent">
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/today_topic"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="10dp"
+                        android:paddingTop="10dp"
                         android:text="오늘은?"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"/>
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/today_title"
@@ -69,24 +63,23 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/today_topic"
                         android:layout_alignLeft="@id/today_topic"
-                        android:layout_marginTop="5dp"
+                        android:paddingTop="5dp"
                         android:text="그릴에 추억 굽는 중"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/white"
-                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="350dp"
+                        android:layout_width="267dp"
                         android:layout_height="wrap_content"
                         android:layout_alignLeft="@id/today_topic"
                         android:layout_alignParentBottom="true"
                         android:background="@android:color/transparent"
-                        android:paddingBottom="20dp"
+                        android:paddingBottom="10dp"
                         android:text="정든 내 차와 함께 떠나는 캠핑. 오늘 카잉 매거진에서는 떠나고 싶지만 무얼 준비해야 할 지 몰라 망설이는 당신에게 차박의 모든 것을 알려주기 위해 특집 기사를 준비했다."
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="12sp" />
                 </RelativeLayout>
 
 
@@ -94,19 +87,19 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/master"
-                android:layout_width="440dp"
-                android:layout_height="440dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="30dp"
                 app:cardBackgroundColor="@color/caring_blue_grey5"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+                app:cardElevation="20dp"
+                android:layout_width="344dp"
+                android:layout_height="344dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:src="@drawable/sample_master" />
+                    android:src="@drawable/sample_master"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -118,11 +111,10 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
                         android:text="장인을 만나다"
-                        android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/master_title"
@@ -134,7 +126,7 @@
                         android:text="독일 수입차 전문 20년"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textColor="@color/white"
-                        android:textSize="30sp" />
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/master_explain"
@@ -142,22 +134,24 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/master_about"
                         android:layout_alignLeft="@id/master_topic"
+                        android:layout_alignParentBottom="false"
                         android:layout_gravity="bottom|left"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@android:color/transparent"
                         android:text="BMW, 벤츠, 아우디, 폭스바겐...\n독일 자동차만 전문으로 진행한\n개업 20주년 튜닝샵을 소개합니다."
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="12sp" />
 
                     <Button
                         android:id="@+id/master_btn"
-                        android:layout_width="130dp"
-                        android:layout_height="50dp"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
                         android:layout_above="@id/master_about"
                         android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="false"
                         android:layout_gravity="bottom|right"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
                         android:backgroundTint="@color/caring_main"
                         android:text="더 알아보기"
                         android:textAlignment="center"
@@ -168,8 +162,8 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/master_about"
                         android:layout_width="match_parent"
-                        android:layout_height="110dp"
-                        android:layout_alignParentBottom="true">
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true" >
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -180,14 +174,12 @@
                                 android:id="@+id/shop_photo"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerVertical="true"
-                                app:cardCornerRadius="10dp"
-                                android:layout_marginStart="10dp">
+                                app:cardCornerRadius="10dp">
 
                                 <ImageView
                                     android:id="@+id/shop_image"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
                                     android:background="@color/caring_blue_grey5"
                                     tools:srcCompat="@tools:sample/avatars" />
                             </androidx.cardview.widget.CardView>
@@ -196,11 +188,10 @@
                                 android:id="@+id/shop_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignTop="@id/shop_photo"
                                 android:layout_marginLeft="20dp"
                                 android:layout_toRightOf="@id/shop_photo"
                                 android:text="튜닝샵 이름"
-                                android:textSize="20sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -210,17 +201,17 @@
                                 android:layout_below="@id/shop_name"
                                 android:layout_alignLeft="@id/shop_name"
                                 android:text="서울 강북"
-                                android:textSize="16sp" />
+                                android:textSize="10sp" />
 
                             <TextView
                                 android:id="@+id/shop_main"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
-                                android:layout_marginLeft="20dp"
+                                android:layout_marginLeft="30dp"
                                 android:layout_toRightOf="@id/shop_name"
                                 android:text="전문분야/전문분야/전문분야"
-                                android:textSize="14sp"
+                                android:textSize="12sp"
                                 android:textStyle="bold" />
                         </RelativeLayout>
 
@@ -240,8 +231,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="이 달의 카잉_10월"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="5dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                 <TextView
@@ -249,14 +238,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="user_example"
-                    android:textSize="30sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"/>
+                    android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="440dp"
-                    android:layout_height="440dp"
+                    android:layout_width="344dp"
+                    android:layout_height="344dp"
                     android:layout_gravity="center"
                     android:layout_marginBottom="30dp"
                     android:clickable="true"
@@ -273,7 +260,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_margin="15dp"
+                            android:layout_margin="10dp"
                             android:clickable="true"
                             app:cardBackgroundColor="@color/caring_blue_grey2"
                             app:cardCornerRadius="20dp"
@@ -281,8 +268,8 @@
                             app:contentPadding="10dp">
 
                             <androidx.cardview.widget.CardView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
                                 android:clickable="true"
                                 app:cardBackgroundColor="@color/caring_blue_grey5"
                                 app:cardCornerRadius="90dp">
@@ -298,61 +285,42 @@
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center" />
 
-                            <RelativeLayout
+                            <LinearLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
+                                android:layout_height="24dp"
+                                android:layout_gravity="bottom"
+                                android:orientation="horizontal">
 
                                 <ImageButton
-                                    android:id="@+id/recommend_bookmark"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="16dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentStart="true"
-                                    android:layout_alignParentBottom="true"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
-                                    android:background="@android:color/transparent"
                                     app:srcCompat="@drawable/ic_baseline_bookmark_24"
                                     app:tint="@color/caring_blue_grey5" />
 
                                 <TextView
-                                    android:id="@+id/recommend_bookmark_number"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignTop="@+id/recommend_bookmark"
-                                    android:layout_alignBottom="@id/recommend_bookmark"
-                                    android:layout_marginRight="20dp"
-                                    android:layout_toRightOf="@id/recommend_bookmark"
+                                    android:layout_marginRight="10dp"
                                     android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="2k"
-                                    android:textSize="20sp" />
+                                    android:text="2k" />
 
                                 <ImageButton
-                                    android:id="@+id/recommend_comment"
-                                    android:layout_width="wrap_content"
+                                    android:layout_width="24dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignBottom="@id/recommend_bookmark"
                                     android:layout_marginRight="10dp"
-                                    android:layout_toRightOf="@id/recommend_bookmark_number"
                                     android:layout_weight="1"
-                                    android:background="@android:color/transparent"
                                     app:srcCompat="@drawable/ic_baseline_message_24"
                                     app:tint="@color/caring_blue_grey5" />
 
                                 <TextView
-                                    android:id="@+id/reccomed_comment_number"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignTop="@+id/recommend_comment"
-                                    android:layout_alignBottom="@id/recommend_bookmark"
                                     android:layout_marginRight="10dp"
-                                    android:layout_toRightOf="@id/recommend_comment"
                                     android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="467"
-                                    android:textSize="20sp" />
-                            </RelativeLayout>
-
+                                    android:text="467" />
+                            </LinearLayout>
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
@@ -380,8 +348,7 @@
                         android:gravity="start"
                         android:text="에센셜"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                        android:textStyle="bold"
-                        android:textSize="16sp"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView"
@@ -390,8 +357,7 @@
                         android:layout_below="@id/textView13"
                         android:text="스마트폰 거치대는 카잉에서"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textStyle="bold"
-                        android:textSize="30sp"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 
@@ -403,146 +369,77 @@
                     app:columnCount="3"
                     app:rowCount="3">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c1" />
 
-                        <ImageView
-                            android:id="@+id/item1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/c1" />
-                    </androidx.cardview.widget.CardView>
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c2" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c3" />
 
-                        <ImageView
-                            android:id="@+id/item2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/c2" />
-                    </androidx.cardview.widget.CardView>
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c4" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c5" />
 
-                        <ImageView
-                            android:id="@+id/item3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/c3" />
-                    </androidx.cardview.widget.CardView>
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/car4" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c3" />
 
-                        <ImageView
-                            android:id="@+id/item4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/c4" />
-                    </androidx.cardview.widget.CardView>
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c2" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:id="@+id/item5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/c5" />
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:id="@+id/item6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/car4" />
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:id="@+id/item7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/car1" />
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:id="@+id/item8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/car2" />
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="135dp"
-                        android:layout_height="135dp"
-                        app:cardCornerRadius="20dp"
-                        android:background="@color/caring_blue_grey5"
-                        android:layout_margin="5dp">
-
-                        <ImageView
-                            android:id="@+id/item9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/car3" />
-                    </androidx.cardview.widget.CardView>
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:backgroundTint="@color/caring_blue_grey5"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/c1" />
                 </androidx.gridlayout.widget.GridLayout>
 
             </LinearLayout>
