@@ -27,7 +27,7 @@ class ProfileFragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         val title = when (position) {
             0 -> "장바구니"
             1 -> "내 아이템"
-            2 -> "저장할 콘텐츠"
+            2 -> "저장한 콘텐츠"
             else -> "장바구니"
         }
         return title
