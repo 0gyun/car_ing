@@ -21,6 +21,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
+            android:clipToPadding="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -29,6 +30,7 @@
             android:paddingTop="5dp">
 
             <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
                 android:id="@+id/today"
                 android:layout_width="440dp"
                 android:layout_height="360dp"
@@ -36,8 +38,7 @@
                 android:layout_marginBottom="30dp"
                 android:clickable="true"
                 app:cardBackgroundColor="@color/caring_blue_grey3"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -99,8 +100,8 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"
                 app:cardBackgroundColor="@color/caring_blue_grey5"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp">
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -261,6 +262,7 @@
                     android:layout_marginBottom="30dp"
                     android:clickable="true"
                     android:elevation="20dp"
+                    app:cardElevation="20dp"
                     app:cardBackgroundColor="@color/caring_blue_grey5"
                     app:cardCornerRadius="20dp">
 
@@ -276,7 +278,7 @@
                             android:layout_margin="15dp"
                             android:clickable="true"
                             app:cardBackgroundColor="@color/caring_blue_grey2"
-                            app:cardCornerRadius="20dp"
+                            app:cardCornerRadius="10dp"
                             app:cardElevation="20dp"
                             app:contentPadding="10dp">
 
@@ -366,6 +368,8 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:clipToPadding="false"
+                    android:padding="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
