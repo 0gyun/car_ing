@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FB0202</color>
+    <color name="coin_yellow">#FFE816</color>
     <color name="navigation_color_home">#6200EE</color>
     <color name="navigation_color_garage">#C9379D</color>
     <color name="navigation_color_profile">#E6A919</color>
