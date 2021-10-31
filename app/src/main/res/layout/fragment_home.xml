@@ -6,34 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".HomeFragment">
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="1100px"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="#9E9999"
-                android:gravity="center"
-                android:text="카잉에서 한번에 견적부터 시공 예약까지! \n스텐다드 모듈 시공 50% 할인 진행중!"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="1100px"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="#9E9999"
-                android:gravity="center"
-                android:text="신규 개발자 모집중!"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </HorizontalScrollView>
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"

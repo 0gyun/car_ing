@@ -54,37 +54,6 @@
         android:layout_height="579dp"
         android:layout_weight="1">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabMsg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:layout_margin="15dp"
-            android:background="@color/caring_main"
-            android:backgroundTint="@color/caring_main"
-            android:src="@drawable/ic_baseline_message_24"
-            app:borderWidth="0dp"
-            app:fabSize="mini" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabCustom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:layout_margin="15dp"
-            android:backgroundTint="@color/caring_main"
-            android:src="@drawable/ic_baseline_build_24"
-            app:borderWidth="0dp"
-            app:fabSize="mini" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="15dp"
-            android:backgroundTint="@color/caring_main"
-            android:src="@drawable/ic_baseline_view_list_24" />
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

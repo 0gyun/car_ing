@@ -9,7 +9,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,7 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -90,7 +90,7 @@
                         android:id="@+id/today_profile"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        tools:srcCompat="@tools:sample/avatars" />
+                        tools:srcCompat="@drawable/profile_person" />
                 </androidx.cardview.widget.CardView>
 
             </RelativeLayout>
@@ -98,8 +98,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:id="@+id/today_upper"
@@ -136,8 +136,18 @@
                     android:adjustViewBounds="true"
                     app:srcCompat="@drawable/sample_today_more" />
             </LinearLayout>
-
+            <androidx.appcompat.widget.AppCompatButton
+                android:stateListAnimator="@null"
+                android:elevation="0dp"
+                android:text="페이지에서 보기"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/searchview_radius_yellow"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

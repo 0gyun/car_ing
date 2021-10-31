@@ -201,29 +201,10 @@ class signUpActivity : AppCompatActivity() {
 }
 
 class MainActivity : AppCompatActivity() {
-    private val fabList : FloatingActionButton by lazy{
-        findViewById<FloatingActionButton>(R.id.fabList)
-    }
-    private val fabMsg : FloatingActionButton by lazy{
-        findViewById<FloatingActionButton>(R.id.fabMsg)
-    }
-    private val fabCustom : FloatingActionButton by lazy{
-        findViewById<FloatingActionButton>(R.id.fabCustom)
-    }
-    private var isFabOpen = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // 플로팅 토글
-        fabList.setOnClickListener{
-            toggleFab()
-        }
-
-        fabMsg.setOnClickListener {
-            val messageFragment = MessageFragment()
-            supportFragmentManager.beginTransaction().replace(R.id.fl_container, messageFragment).commit()
-        }
 
         //하단 버튼
         var bnv = findViewById(R.id.bnv) as BottomNavigationView
@@ -256,50 +237,11 @@ class MainActivity : AppCompatActivity() {
             selectedItemId = R.id.homeBT
         }
     }
-
-    private fun toggleFab(){
-        if (isFabOpen){
-            ObjectAnimator.ofFloat(fabCustom,"translationY",0f).apply { start() }
-            ObjectAnimator.ofFloat(fabMsg,"translationY",0f).apply { start() }
-            isFabOpen = false
-        }
-        else {
-            ObjectAnimator.ofFloat(fabCustom,"translationY",-175f).apply { start() }
-            ObjectAnimator.ofFloat(fabMsg,"translationY",-300f).apply { start() }
-            isFabOpen = true
-        }
-    }
     // 뒤로 가기 버튼 막기
     override fun onBackPressed() {
         super.onBackPressed() //막고 싶으면 여기 주석처리
     }
 }
-
-class FragmentAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
-    // 포지션 따라 이동
-    override fun getItem(position: Int): Fragment {
-        val fragment = when (position) {
-            0 -> RecommendFragment.newInstant()
-            1 -> SqaureFragment.newInstant()
-            2 -> StudyFragment.newInstant()
-            else -> RecommendFragment.newInstant()
-        }
-        return fragment
-    }
-
-    override fun getCount(): Int = 5
-
-    override fun getPageTitle(position: Int): CharSequence? {
-        val title = when (position) {
-            0 -> "추천"
-            1 -> "광장"
-            2 -> "스쿨"
-            else -> "추천"
-        }
-        return title
-    }
-}
-
 
 
 

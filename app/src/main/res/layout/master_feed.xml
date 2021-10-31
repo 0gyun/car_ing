@@ -90,7 +90,7 @@
                         android:id="@+id/master_profile"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        tools:srcCompat="@tools:sample/avatars" />
+                        tools:srcCompat="@drawable/profile_person" />
                 </androidx.cardview.widget.CardView>
 
             </RelativeLayout>
@@ -148,7 +148,18 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </RelativeLayout>
-
+            <androidx.appcompat.widget.AppCompatButton
+                android:stateListAnimator="@null"
+                android:elevation="0dp"
+                android:text="튜닝샵 페이지로 이동"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/searchview_radius_yellow"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
         </LinearLayout>
     </ScrollView>
 
