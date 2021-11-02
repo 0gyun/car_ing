@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="122dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/IV"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/tuning_img1"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/ShopNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/IV"
+                android:layout_marginLeft="138dp"
+                android:text="올빼미커스텀"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/ShopInforTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ShopNameTV"
+                android:layout_marginLeft="138dp"
+                android:text="외장 튜닝 / 랩핑 / PPF"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_below="@id/ShopInforTV"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/tutorial_start_yello" />
+            <TextView
+                android:id="@+id/ScoreTV"
+                android:layout_marginLeft="152dp"
+                android:layout_below="@+id/ShopInforTV"
+                android:text="5.0"
+                android:textSize="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/partner"
+                android:layout_marginRight="15dp"
+                android:layout_width="90dp"
+                android:layout_height="47dp"
+                android:layout_below="@+id/ScoreTV"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -18,12 +18,12 @@
             android:layout_height="wrap_content"
             app:tabGravity="start"
             app:tabIconTint="@drawable/menu_selector_color"
-            app:tabIndicatorColor="@color/caring_main_tonedown2"
+            app:tabIndicatorColor="@color/white"
             app:tabIndicatorFullWidth="false"
             app:tabIndicatorGravity="bottom"
             app:tabIndicatorHeight="4dp"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="@color/caring_main_tonedown2"
+            app:tabSelectedTextColor="@color/black"
             app:tabTextAppearance="@style/TabText"/>
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.viewpager.widget.ViewPager
