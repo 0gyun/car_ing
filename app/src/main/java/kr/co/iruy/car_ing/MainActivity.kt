@@ -208,6 +208,7 @@ class MainActivity : AppCompatActivity() {
 
         //하단 버튼
         var bnv = findViewById(R.id.bnv) as BottomNavigationView
+        bnv.itemIconTintList = null;
         bnv.run { setOnNavigationItemSelectedListener {
             when(it.itemId) {
                 R.id.homeBT -> {

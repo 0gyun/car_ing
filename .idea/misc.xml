@@ -4,8 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable-v24/tab_background_selected.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable-v24/tab_border.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/bnv_home_selector.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/bnv_message_selector.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/bnv_profile_selector.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/bnv_selector_background.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/bnv_selector_color.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/bnv_store_selector.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/bnv_tuning_shop_selectore.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/buttom_icon_color.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_3d_rotation_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.35625" />
@@ -26,6 +33,16 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_storefront_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_view_list_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_home.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_message.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_profile.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_store.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_tuning_shop.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_home.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_message.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_profile.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_store.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_tuning_shop.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/kakao_bg.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/layout_round.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/login_icon.xml" value="0.35625" />
@@ -36,7 +53,7 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/signup_icon.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/tendency_checkbox.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_login.xml" value="0.3359375" />
-        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_main.xml" value="0.18888888888888888" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_search.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_signup.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_tendency.xml" value="0.3359375" />
@@ -51,6 +68,7 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_recommend.xml" value="0.2" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_second.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_square.xml" value="0.22" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_study.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/grid_view_custom.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/item_grid.xml" value="0.25" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/item_my_chat.xml" value="0.3359375" />

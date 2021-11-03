@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/homeBT" app:showAsAction="ifRoom" android:enabled="true"
-        android:icon="@drawable/ic_baseline_home_24" android:title="홈" />
+        android:icon="@drawable/bnv_home_selector" android:title="홈" />
     <item android:id="@+id/storeBT" app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_baseline_store_24" android:title="스토어" />
+        android:icon="@drawable/bnv_store_selector" android:title="스토어" />
     <item android:id="@+id/messageBT" app:showAsAction="ifRoom"
-        android:enabled="true" android:icon="@drawable/ic_baseline_message_24" android:title="메세지" />
+        android:enabled="true" android:icon="@drawable/bnv_message_selector" android:title="메세지" />
     <item android:id="@+id/garageBT" app:showAsAction="ifRoom"
-        android:enabled="true" android:icon="@drawable/ic_baseline_garage_24" android:title="튜닝샵" />
+        android:enabled="true" android:icon="@drawable/bnv_tuning_shop_selector" android:title="튜닝샵" />
     <item android:id="@+id/profileBT" app:showAsAction="ifRoom"
-        android:enabled="true" android:icon="@drawable/ic_baseline_person_24" android:title="프로필" />
+        android:enabled="true" android:icon="@drawable/bnv_profile_selector" android:title="프로필" />
 </menu>
