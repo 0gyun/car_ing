@@ -90,6 +90,7 @@
         <entry key="..\:/workspace/car_ing/app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.3776041666666667" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.38229166666666664" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/drawable/ic_launcher_background.xml" value="0.38229166666666664" />
+        <entry key="..\:/workspace/car_ing/app/src/main/res/drawable/ic_selected_tuning_shop.xml" value="0.8046875" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/drawable/kakao_bg.xml" value="0.20677083333333332" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/drawable/layout_round.xml" value="0.1734375" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/drawable/login_icon.xml" value="0.2203125" />
@@ -112,12 +113,14 @@
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_message.xml" value="0.20208333333333334" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_nohow.xml" value="0.36614583333333334" />
+        <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_owl_custom.xml" value="0.20069444444444445" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_profile.xml" value="0.20208333333333334" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_search.xml" value="0.20364583333333333" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_store.xml" value="0.20208333333333334" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/activity_tendency.xml" value="0.1596244131455399" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/background_splash.xml" value="0.36614583333333334" />
+        <entry key="..\:/workspace/car_ing/app/src/main/res/layout/custom_dialog.xml" value="0.2822265625" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/custom_login_view.xml" value="0.190625" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/exterior_item.xml" value="0.22" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_editor.xml" value="0.21197916666666666" />
@@ -125,6 +128,7 @@
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_field_etc.xml" value="0.49373433583959897" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_field_exterior.xml" value="0.25" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_field_interior.xml" value="0.845703125" />
+        <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_field_performance.xml" value="0.49373433583959897" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_field_recover.xml" value="0.49373433583959897" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_first.xml" value="0.33" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_follower.xml" value="0.36143187066974597" />
@@ -132,6 +136,7 @@
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_home.xml" value="0.15" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_knowhow.xml" value="0.2015625" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_message.xml" value="0.18" />
+        <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_my_item.xml" value="0.2890625" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_photo.xml" value="0.190625" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_plaza.xml" value="0.20572916666666666" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_popular.xml" value="0.22" />
@@ -145,7 +150,7 @@
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_third.xml" value="0.833984375" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_today_caring.xml" value="0.845703125" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_trend.xml" value="0.190625" />
-        <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_tuning_around.xml" value="0.845703125" />
+        <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_tuning_around.xml" value="0.2196875" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_tuning_favorites.xml" value="0.49373433583959897" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/fragment_tuning_field.xml" value="0.123125" />
         <entry key="..\:/workspace/car_ing/app/src/main/res/layout/grid_view_custom.xml" value="0.2015625" />
