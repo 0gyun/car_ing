@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwlHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:lineSpacingExtra="10dp"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="경기도 과천시 문연로 98\n평일 10:00 ~ 20:00 토요일,공휴일 휴무\n차박 개조/내장재 교체 전문 샵 올빼미커스텀입니다!" />
+
+</FrameLayout>

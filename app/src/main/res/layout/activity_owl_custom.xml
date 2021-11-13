@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="330dp"
+            android:layout_height="360dp"
             android:background="@drawable/owl_custom_photo" />
 
         <LinearLayout
@@ -38,19 +38,19 @@
                         android:layout_marginTop="20dp"
                         android:text="올빼미커스텀"
                         android:textColor="@color/black"
-                        android:textSize="23dp"
+                        android:textSize="27dp"
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="25dp"
+                        android:layout_width="22dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="23dp"
                         android:background="@drawable/bookmark" />
 
                     <ImageView
                         android:layout_width="23dp"
-                        android:layout_height="25dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="23dp"
                         android:background="@drawable/share" />
@@ -60,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="외장 튜닝 / 래핑 / PPF"
                     android:textSize="9dp" />
 
@@ -68,39 +68,53 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
                         android:src="@drawable/ic_baseline_star_yellow" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="5.0"
-                        android:textSize="15dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="16dp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
             <ImageView
-                android:layout_width="120dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="130dp"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="80dp"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/partner" />
         </LinearLayout>
-        <TextView
-            android:lineSpacingExtra="7dp"
-            android:textColor="@color/black"
+        <com.google.android.material.tabs.TabLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/TL"
+            app:tabTextAppearance="@style/tabTextSizeBold"
+            app:tabTextColor="@color/black"
+            app:tabSelectedTextColor="@color/caring_main_tonedown2"
             android:layout_marginLeft="20dp"
-            android:text="경기 과천시 문연로 98\n평일 10:00 ~ 20:00 토요일,공휴일 휴무\n차박 개조/내장재 교체 전문 샵 올빼미커스텀입니다!"
-            android:textSize="17dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="45dp" />
+            android:layout_marginRight="180dp"
+            app:tabIndicatorGravity="bottom"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/caring_main_tonedown2"
+            app:tabMode="fixed"
+            android:layout_height="50dp"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/VP"
+            android:layout_width="match_parent"
+            android:layout_height="140dp" />
+
         <ImageView
             android:background="#9CA4C3"
             android:layout_marginLeft="20dp"

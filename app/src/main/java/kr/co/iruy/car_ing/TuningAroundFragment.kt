@@ -23,7 +23,6 @@ class TuningAroundFragment : Fragment() {
             val intent = Intent(getActivity(), owlCustom::class.java)
             getActivity()?.startActivity(intent)
         }
-
         return view
     }
 
