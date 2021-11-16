@@ -167,10 +167,10 @@
                         android:background="@android:color/transparent"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/today_maintext_img"
-                        app:layout_constraintHorizontal_bias="0.036"
+                        app:layout_constraintHorizontal_bias="0.015"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/today_maintext_img"
-                        app:layout_constraintVertical_bias="0.978"
+                        app:layout_constraintVertical_bias="0.98"
                         app:srcCompat="@drawable/ic_hide_item" />
 
                     <ImageView
