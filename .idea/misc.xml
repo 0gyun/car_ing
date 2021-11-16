@@ -18,7 +18,9 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_3d_rotation_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_bookmark24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_bookmark_off.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_build_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_directions_car_24.xml" value="0.35625" />
@@ -33,6 +35,8 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_store_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_storefront_24.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_baseline_view_list_24.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_bookmark_off.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_bookmark_on.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_home.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_message.xml" value="0.35625" />
@@ -87,11 +91,11 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/item_grid.xml" value="0.25" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/item_my_chat.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/item_your_chat.xml" value="0.3359375" />
-        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/master_feed.xml" value="0.2" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/master_feed.xml" value="0.25" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/row.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/square_feed.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/test2.xml" value="0.5042735042735043" />
-        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/today_feed.xml" value="0.1" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/today_feed.xml" value="0.25" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/viewpager_image.xml" value="0.1" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/menu/navi_menu.xml" value="0.2" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/menu/tool_bar.xml" value="0.3359375" />

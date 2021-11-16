@@ -1,9 +1,7 @@
 package kr.co.iruy.car_ing
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +17,18 @@ class TodayFeed : AppCompatActivity(){
             finish()
         }
 
+        var bookmark : Boolean = true
+        val today_bookmark = findViewById<ImageButton>(R.id.master_bookmark)
+        today_bookmark.setOnClickListener{
+            if(bookmark){
+                today_bookmark.setImageResource(R.drawable.ic_baseline_bookmark_off)
+                bookmark = false
+            }
+            else{
+                today_bookmark.setImageResource(R.drawable.ic_baseline_bookmark24)
+                bookmark = true
+            }
+        }
         var info_on : Boolean = false
         val item_info_btn = findViewById<ImageButton>(R.id.today_item_info_button)
         val item_info_1 = findViewById<ImageView>(R.id.item_info1)

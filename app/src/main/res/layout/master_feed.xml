@@ -26,14 +26,36 @@
                 android:background="@drawable/sample_master"
                 android:padding="20dp">
 
-                <ImageButton
-                    android:id="@+id/master_back_btn"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/master_topic_feed"
-                    android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/ic_back_button"
-                    app:tint="@color/white" />
+                    android:layout_alignStart="@+id/master_editor_feed"
+                    android:layout_alignEnd="@id/editor"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/master_back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/ic_back_button"
+                        app:tint="@color/white" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/master_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/ic_baseline_bookmark24"
+                        app:tint="@color/caring_blue_grey1" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/master_topic_feed"
@@ -80,6 +102,7 @@
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/editor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -98,28 +121,72 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
 
-                <TextView
-                    android:id="@+id/master_maintext1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="10dp"
-                    android:text="Q: 안녕하세요, 김진수 장인님. 올해로 20주년을 맞이하셨다고 들었어요. 소감이 어떠신가요?"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/master_maintext2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="10dp"
-                    android:text="A: 감개무량합니다. 모두 단골 고객분들 덕분이죠. 요즘 카잉으로 신규 고객분들이 많이 찾아와 주셔서 더욱 재미있게 일하고 있습니다."
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        app:cardCornerRadius="90dp">>
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            tools:srcCompat="@drawable/profile_person" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/master_maintext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:padding="10dp"
+                        android:text="안녕하세요, 김진수 장인님. 개업 20주년 축하드립니다! 소감 한 말씀 부탁드려요."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="90dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/profile_person2" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/master_maintext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:padding="10dp"
+                        android:text="감사합니다. 여기까지 올 수 있었던 것은 모두 저희 단골 고객 여러분 덕분이죠. 카잉과 함께 일하게 되어서 더 기쁜 하루를 보내고 있어요."
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -141,25 +208,47 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginEnd="20dp"
-                    android:paddingBottom="20dp"
-                    android:text='"20년 전과 지금은 자동차 문화가 많이 달라요.\n점점 자신만의 개성을 표현하는 경향이\n강해지고 있습니다."'
+                    android:paddingBottom="15dp"
+                    android:text="정기 엔진오일 교체 작업을 진행 중인 김진수 장인님."
                     android:textAlignment="textEnd"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
             </RelativeLayout>
-            <androidx.appcompat.widget.AppCompatButton
-                android:stateListAnimator="@null"
-                android:elevation="0dp"
-                android:text="튜닝샵 페이지로 이동"
-                android:textStyle="bold"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
-                android:background="@drawable/searchview_radius_yellow"
-                android:layout_marginLeft="40dp"
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+                <TextView
+                    android:id="@+id/today_upper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text='"'
+                    android:textAlignment="center"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/today_maintext"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="올해 개업 20주년을 맞은 마이스터케이는\n 디테일하고 깔끔한 작업 퀄리티로 유명해서 \n전국에서 많은 고객들이 예약을 서두르고 있다."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/todat_lower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text='"'
+                    android:textAlignment="center"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

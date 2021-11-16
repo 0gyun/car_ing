@@ -15,5 +15,17 @@ class MasterFeed : AppCompatActivity(){
         back_btn.setOnClickListener{
             finish()
         }
+        var bookmark : Boolean = true
+        val master_bookmark = findViewById<ImageButton>(R.id.master_bookmark)
+        master_bookmark.setOnClickListener{
+            if(bookmark){
+                master_bookmark.setImageResource(R.drawable.ic_baseline_bookmark_off)
+                bookmark = false
+            }
+            else{
+                master_bookmark.setImageResource(R.drawable.ic_baseline_bookmark24)
+                bookmark = true
+            }
+        }
     }
 }
