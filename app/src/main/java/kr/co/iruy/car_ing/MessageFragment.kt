@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 
 class MessageFragment : Fragment() {
@@ -25,18 +26,12 @@ class MessageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        preferences = activity?.getSharedPreferences("USERSIGN", Context.MODE_PRIVATE)!!
-        val editor = preferences.edit()
-        val v : View = inflater.inflate(R.layout.fragment_message,container,false)
-        val buttonACB = v.findViewById<Button>(R.id.messageACB)
-        val textName = v.findViewById<TextView>(R.id.profileName)
 
-        buttonACB.setOnClickListener {
-            Toast.makeText(activity,"ffd",Toast.LENGTH_SHORT).show()
-            editor.putString("name",textName.text.toString())
-            val intent = Intent(activity,ChatRoomActivity::class.java)
-            startActivity(intent)
+        val v : View = inflater.inflate(R.layout.fragment_message,container,false)
+        val CV = v.findViewById<CardView>(R.id.CV)
+        CV.setOnClickListener{
+            val intent = Intent(getActivity(), MsgActivity::class.java)
+            getActivity()?.startActivity(intent)
         }
         return v
     }

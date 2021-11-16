@@ -7,158 +7,350 @@
     android:orientation="vertical"
     tools:context=".MessageFragment">
 
-    <androidx.appcompat.widget.Toolbar
+    <ImageView
+        android:id="@+id/IV"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#F8F7F7">
+        android:layout_height="120dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/hyundai_collab" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CV"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/caring_profile" />
+        <LinearLayout
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="스트라이트"
+                android:textSize="20dp"
+                android:textColor="@color/caring_blue_grey6"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/tuning_shop_logo"
+                android:layout_marginLeft="7dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="50dp"
+            android:textSize="17dp"
+            android:textColor="@color/caring_blue_grey6"
+            android:text="가격문의"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/chattingTV"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:gravity="left|center"
-            android:text="채팅"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ic_baseline_settings_24"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="right"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ic_baseline_add_24" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="right"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/ic_baseline_search_24" />
-    </androidx.appcompat.widget.Toolbar>
-
-    <ScrollView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:text="오후 02:56"
+            android:textColor="@color/caring_blue_grey6"
+            android:textSize="12dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="90dp">
 
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/caring_profile" />
         <LinearLayout
-            android:id="@+id/messageLL"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/prfileImage"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/person"
-                    app:civ_border_color="@color/black"
-                    app:civ_border_width="2dp" />
-
-                <TextView
-                    android:id="@+id/profileName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/prfileImage"
-                    android:text="신명철"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/profileName"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/prfileImage"
-                    android:text="안녕하세요"
-                    android:textSize="15dp" />
-
-                <TextView
-                    android:id="@+id/time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_toLeftOf="@+id/messageACB"
-                    android:text="3:14"
-                    android:textSize="8dp" />
-
-                <Button
-                    android:id="@+id/messageACB"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/ic_baseline_message_24" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/prfileImage1"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/person"
-                    app:civ_border_color="@color/black"
-                    app:civ_border_width="2dp" />
-
-                <TextView
-                    android:id="@+id/profileName1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/prfileImage1"
-                    android:text="김명철"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/profileName1"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/prfileImage1"
-                    android:text="죄송합니다"
-                    android:textSize="15dp" />
-                <TextView
-                    android:id="@+id/time1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_toLeftOf="@+id/messageACB1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="20dp"
-                    android:text="14:28"
-                    android:textSize="8dp" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/messageACB1"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/ic_baseline_message_24" />
-
-            </RelativeLayout>
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="브라부스전문 Z튜너"
+                android:textSize="20dp"
+                android:textColor="@color/caring_blue_grey6"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/tuning_shop_logo"
+                android:layout_marginLeft="7dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
         </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="50dp"
+            android:textSize="17dp"
+            android:textColor="@color/caring_blue_grey6"
+            android:text="혹시 가격조정 가능할까요?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:text="오후 01:01"
+            android:textColor="@color/caring_blue_grey6"
+            android:textSize="12dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/caring_profile" />
+        <LinearLayout
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="스타LED"
+                android:textSize="20dp"
+                android:textColor="@color/caring_blue_grey6"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/tuning_shop_logo"
+                android:layout_marginLeft="7dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="50dp"
+            android:textSize="17dp"
+            android:textColor="@color/caring_blue_grey6"
+            android:text="배선 구조 변경 문의드립니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:text="오전 11:40"
+            android:textColor="@color/caring_blue_grey6"
+            android:textSize="12dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/caring_profile" />
+        <LinearLayout
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="오렌지 커스텀(주) 경인대리점"
+                android:textSize="20dp"
+                android:textColor="@color/caring_blue_grey6"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/tuning_shop_logo"
+                android:layout_marginLeft="7dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="50dp"
+            android:textSize="17dp"
+            android:textColor="@color/caring_blue_grey6"
+            android:text="11월 27일은 가능합니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:text="2일 전"
+            android:textColor="@color/caring_blue_grey6"
+            android:textSize="12dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/caring_profile" />
+        <LinearLayout
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="커스텀 개러지"
+                android:textSize="20dp"
+                android:textColor="@color/caring_blue_grey6"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/tuning_shop_logo"
+                android:layout_marginLeft="7dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="50dp"
+            android:textSize="17dp"
+            android:textColor="@color/caring_blue_grey6"
+            android:text="네. 보험 가입되어 있습니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:text="3개월 전"
+            android:textColor="@color/caring_blue_grey6"
+            android:textSize="12dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/caring_profile" />
+        <LinearLayout
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="커스텀 개러지"
+                android:textSize="20dp"
+                android:textColor="@color/caring_blue_grey6"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="50dp"
+            android:textSize="17dp"
+            android:textColor="@color/caring_blue_grey6"
+            android:text="네. 보험 가입되어 있습니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:text="오후 02:56"
+            android:textColor="@color/caring_blue_grey6"
+            android:textSize="12dp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/caring_profile" />
+        <LinearLayout
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="스트라이트"
+                android:textSize="20dp"
+                android:textColor="@color/caring_blue_grey6"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@drawable/tuning_shop_logo"
+                android:layout_marginLeft="7dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="50dp"
+            android:textSize="17dp"
+            android:textColor="@color/caring_blue_grey6"
+            android:text="네. 보험 가입되어 있습니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:text="오후 02:56"
+            android:textColor="@color/caring_blue_grey6"
+            android:textSize="12dp" />
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
