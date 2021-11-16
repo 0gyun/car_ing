@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true">
 
 
     <ScrollView
@@ -26,14 +27,33 @@
                 android:background="@drawable/sample_today"
                 android:padding="20dp">
 
-                <ImageButton
-                    android:id="@+id/today_back_btn"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/today_topic_feed"
-                    android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/ic_back_button"
-                    app:tint="@color/white" />
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/today_back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/ic_back_button"
+                        app:tint="@color/white" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/ic_baseline_bookmark_24"
+                        app:tint="@color/caring_blue_grey1" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/today_topic_feed"
@@ -129,25 +149,18 @@
                     android:textSize="36sp"
                     android:textStyle="bold" />
 
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
                 <ImageView
                     android:id="@+id/today_maintext_img"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     app:srcCompat="@drawable/sample_today_more" />
-            </LinearLayout>
-            <androidx.appcompat.widget.AppCompatButton
-                android:stateListAnimator="@null"
-                android:elevation="0dp"
-                android:text="페이지에서 보기"
-                android:textStyle="bold"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
-                android:background="@drawable/searchview_radius_yellow"
-                android:layout_marginLeft="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"/>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
