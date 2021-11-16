@@ -149,18 +149,61 @@
                     android:textSize="36sp"
                     android:textStyle="bold" />
 
-            </LinearLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/today_maintext_img"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    app:srcCompat="@drawable/sample_today_more" />
-            </RelativeLayout>
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/today_maintext_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/sample_today_more" />
+
+                    <ImageButton
+                        android:id="@+id/today_item_info_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/today_maintext_img"
+                        app:layout_constraintHorizontal_bias="0.036"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/today_maintext_img"
+                        app:layout_constraintVertical_bias="0.978"
+                        app:srcCompat="@drawable/ic_hide_item" />
+
+                    <ImageView
+                        android:id="@+id/item_info1"
+                        android:layout_width="165dp"
+                        android:layout_height="82dp"
+                        android:layout_marginTop="68dp"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/today_maintext_img"
+                        app:layout_constraintHorizontal_bias="0.238"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/today_maintext_img"
+                        app:layout_constraintVertical_bias="0.222"
+                        app:srcCompat="@drawable/item_info1" />
+
+                    <ImageView
+                        android:id="@+id/item_info2"
+                        android:layout_width="136dp"
+                        android:layout_height="58dp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.918"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/today_maintext_img"
+                        app:layout_constraintVertical_bias="0.405"
+                        app:srcCompat="@drawable/item_info2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
