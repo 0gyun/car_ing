@@ -5,6 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
+import kr.co.iruy.car_ing.Adapter.SectionPagerAdapter
 
 class StoreFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +19,15 @@ class StoreFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_store, container, false)
+       return inflater.inflate(R.layout.fragment_store,container,false)
+    }
+    companion object{
+        fun newInstant() : SqaureFragment
+        {
+            val args = Bundle()
+            val frag = SqaureFragment()
+            frag.arguments = args
+            return frag
+        }
     }
 }

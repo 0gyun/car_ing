@@ -4,6 +4,9 @@
     <style name="MySearchViewStyle">
         <item name="searchIcon">@drawable/ic_baseline_search_24</item>
     </style>
+    <style name="msgView">
+        <item name="searchIcon">@drawable/msg_icon</item>
+    </style>
 
     <style name="TabText">
         <item name="android:radius">10dp</item>
