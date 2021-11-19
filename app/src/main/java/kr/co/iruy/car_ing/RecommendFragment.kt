@@ -1,11 +1,14 @@
 package kr.co.iruy.car_ing
 
 import android.content.Intent
+import android.graphics.Paint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 
@@ -28,7 +31,16 @@ class RecommendFragment : Fragment() {
             val intent =Intent(getActivity(), MasterFeed::class.java)
             getActivity()?.startActivity(intent)
         }
-
+        val item1_cost = view.findViewById<TextView>(R.id.item1_cost)
+        item1_cost.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG)
+        val item2_cost = view.findViewById<TextView>(R.id.item2_cost)
+        item2_cost.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG)
+        val item3_cost = view.findViewById<TextView>(R.id.item3_cost)
+        item3_cost.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG)
+        val gradient = view.findViewById<ImageView>(R.id.gradient)
+        gradient.bringToFront()
+        val item_more_btn = view.findViewById<Button>(R.id.item_more_btn)
+        item_more_btn.bringToFront()
         return view
     }
     companion object{
