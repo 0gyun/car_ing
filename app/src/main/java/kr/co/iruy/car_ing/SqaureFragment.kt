@@ -1,11 +1,9 @@
 package kr.co.iruy.car_ing
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
@@ -49,7 +47,7 @@ class SqaureFragment : Fragment() {
         tabLayouts = myFragment.findViewById(R.id.tabLayout)
 
         var adapter = SectionPagerAdapter(childFragmentManager)
-        adapter.addFragment(todayCaringFragment(), "이달의 카잉")
+        adapter.addFragment(monthlyCaringFragment(), "이달의 카잉")
         adapter.addFragment(PopularFeedFragment(),"실시간 인기 피드")
         adapter.addFragment(FollowerFragment(),"팔로워 피드")
 
