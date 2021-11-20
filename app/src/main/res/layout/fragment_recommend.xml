@@ -499,7 +499,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="이제 스마트폰 없는 차 안은 상상할 수 없죠. 카잉에서 더욱 내 차에 적합한 스마트폰 거치대가 무엇인지 직접 적용해보고 구매하세요."
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -510,8 +511,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
                         android:layout_marginTop="10dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="10dp">
+                        app:cardCornerRadius="20dp">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -647,8 +647,7 @@
                         android:layout_height="116dp"
                         android:layout_marginTop="10dp"
                         android:layout_below="@id/item1_card"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="10dp">
+                        app:cardCornerRadius="20dp">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -784,8 +783,7 @@
                         android:layout_height="116dp"
                         android:layout_marginTop="10dp"
                         android:layout_below="@id/item2_card"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="10dp">
+                        app:cardCornerRadius="20dp">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -919,16 +917,19 @@
                     <ImageView
                         android:id="@+id/gradient"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/item_gradient" />
+                        android:layout_height="130dp"
+                        android:layout_alignParentBottom="true"
+                        android:elevation="2dp"
+                        android:src="@drawable/item_gradient" />
 
                     <Button
                         android:id="@+id/item_more_btn"
                         android:layout_width="130dp"
                         android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="20dp"
+                        android:elevation="3dp"
                         android:backgroundTint="@color/caring_main"
                         android:text="더 알아보기"
                         android:textAlignment="center"
