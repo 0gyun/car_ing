@@ -79,6 +79,12 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, Book2Activity::class.java)
             startActivity(intent)
         }
+
+        val modelgo = findViewById<Button>(R.id.modelgo)
+        modelgo.setOnClickListener{
+            val intent = Intent(this, ModelActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 class tendencyActivity: AppCompatActivity(){
