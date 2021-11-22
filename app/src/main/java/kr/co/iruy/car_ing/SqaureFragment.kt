@@ -47,8 +47,8 @@ class SqaureFragment : Fragment() {
         tabLayouts = myFragment.findViewById(R.id.tabLayout)
 
         var adapter = SectionPagerAdapter(childFragmentManager)
-        adapter.addFragment(monthlyCaringFragment(), "이달의 카잉")
         adapter.addFragment(PopularFeedFragment(),"실시간 인기 피드")
+        adapter.addFragment(monthlyCaringFragment(), "이달의 카잉")
         adapter.addFragment(FollowerFragment(),"팔로워 피드")
 
         viewPagers!!.adapter = adapter

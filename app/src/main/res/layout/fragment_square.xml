@@ -26,34 +26,12 @@
             app:tabTextAppearance="@style/TabText" />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/colorIV"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="#E7FF54" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
-            android:text="피드 올리고 경품도 받고! \n카잉 피드 공유 이벤트 진행 중"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_margin="20dp"
-            android:layout_alignEnd="@+id/colorIV"
-            android:layout_alignBottom="@+id/colorIV"
-            android:text="자세히 보기 ▶"
-            android:textSize="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/banner" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
