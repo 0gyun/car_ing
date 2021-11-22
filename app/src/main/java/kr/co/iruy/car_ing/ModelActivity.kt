@@ -47,6 +47,6 @@ class ModelActivity : AppCompatActivity() {
         settings.domStorageEnabled = true
         settings.allowUniversalAccessFromFileURLs = true
         settings.allowFileAccess = true
-        wv_main.loadUrl("https://dweb-fjhyz.run.goorm.io/3dweb/")
+        wv_main.loadUrl("https://vca-zfcvc.run.goorm.io/vca/")
     }
 }

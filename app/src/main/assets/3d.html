@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <script type="text/javascript" src="vue.js"></script>
-  <script type="text/javascript" src="vue-3d-model_umd.js"></script>
-  <script type="text/javascript" src="jquery_min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-3d-model/dist/vue-3d-model.umd.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <style>
     /* ProgressBar 관련 */
@@ -51,7 +51,7 @@
    <div id="app" class="app">
     <model-gltf class="model-gltf" :background-color="bgColor" :background-alpha="bgAlpha" :scale="Scale"
      @on-load="onLoad" @on-progress="onProgress" :width=UbWindow.width :height=UbWindow.height :position="Position"
-     :rotation="Rotation" src="./pony_cartoon/scene.gltf"></model-gltf>
+     :rotation="Rotation" src="./Honda.glb"></model-gltf>
    </div>
   </div>
 
