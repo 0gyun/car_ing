@@ -9,7 +9,7 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import kr.co.iruy.car_ing.Adapter.SectionPagerAdapter
 
-class GarageFragment : Fragment() {
+class GarageFragmentt : Fragment() {
     lateinit var myFragment: View
     lateinit var tabLayouts: TabLayout
     lateinit var viewPagers: ViewPager
@@ -23,13 +23,14 @@ class GarageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        myFragment = inflater.inflate(R.layout.fragment_home,container,false)
+        myFragment = inflater.inflate(R.layout.fragment_garage, container, false)
         return myFragment
     }
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         setUpViewPager()
-        tabLayouts.addOnTabSelectedListener(object :TabLayout.OnTabSelectedListener{
+        tabLayouts.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
             override fun onTabReselected(tab: TabLayout.Tab?) {
 
             }
@@ -46,7 +47,7 @@ class GarageFragment : Fragment() {
         tabLayouts = myFragment.findViewById(R.id.tabLayout)
 
         var adapter = SectionPagerAdapter(childFragmentManager)
-        adapter.addFragment(TuningFieldFragment(), "분야별")
+        adapter.addFragment(TuningFieldFragment(), "분야 별")
         adapter.addFragment(TuningAroundFragment(),"내 주변 샵")
         adapter.addFragment(TuningFavoritesFragment(),"즐겨찾기")
 

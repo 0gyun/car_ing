@@ -1,5 +1,6 @@
 package kr.co.iruy.car_ing
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
@@ -11,11 +12,11 @@ class owlCustom : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_owl_custom)
-        val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
-        val VP = findViewById<ViewPager>(R.id.VP)
-        val TL = findViewById<TabLayout>(R.id.TL)
-        VP.adapter = fragmentAdapter
-        TL.setupWithViewPager(VP)
 
+        val btn2 = findViewById<ImageButton>(R.id.btn2)
+        btn2.setOnClickListener {
+            val intent = Intent(this, MsgActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

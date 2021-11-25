@@ -27,7 +27,7 @@
                 android:background="@drawable/back_btn" />
             <ImageView
                 android:id="@+id/IV2"
-                android:background="@drawable/caring_profile"
+                android:background="@drawable/msg_pro8"
                 android:layout_marginLeft="46dp"
                 app:layout_constraintLeft_toRightOf="@+id/IV1"
                 app:layout_constraintTop_toTopOf="parent"

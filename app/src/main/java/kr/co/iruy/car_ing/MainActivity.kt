@@ -236,7 +236,7 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(R.id.fl_container, messageFragment).commit()
                 }
                 R.id.garageBT -> {
-                    val garageFragment = GarageFragment()
+                    val garageFragment = GarageFragmentt()
                     supportFragmentManager.beginTransaction().replace(R.id.fl_container, garageFragment).commit()
                 }
                 R.id.profileBT -> {

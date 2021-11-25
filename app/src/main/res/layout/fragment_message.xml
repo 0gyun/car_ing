@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginBottom="12dp"
-        android:background="@drawable/hyundai_collab" />
+        android:background="@drawable/caring_partner" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CV"
@@ -25,7 +25,7 @@
             android:layout_height="67dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/caring_profile" />
+            android:background="@drawable/msg_pro8" />
         <LinearLayout
             android:layout_marginLeft="119dp"
             android:layout_marginTop="14dp"
@@ -53,7 +53,13 @@
             android:text="가격문의"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
+        <ImageView
+            android:layout_marginRight="25dp"
+            android:background="@drawable/red_dot"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="right|bottom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,7 +80,7 @@
             android:layout_height="67dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/caring_profile" />
+            android:background="@drawable/msg_pro6" />
         <LinearLayout
             android:layout_marginLeft="119dp"
             android:layout_marginTop="14dp"
@@ -123,7 +129,7 @@
             android:layout_height="67dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/caring_profile" />
+            android:background="@drawable/msg_pro5" />
         <LinearLayout
             android:layout_marginLeft="119dp"
             android:layout_marginTop="14dp"
@@ -172,7 +178,7 @@
             android:layout_height="67dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/caring_profile" />
+            android:background="@drawable/msg_pro4" />
         <LinearLayout
             android:layout_marginLeft="119dp"
             android:layout_marginTop="14dp"
@@ -221,7 +227,7 @@
             android:layout_height="67dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/caring_profile" />
+            android:background="@drawable/msg_pro3" />
         <LinearLayout
             android:layout_marginLeft="119dp"
             android:layout_marginTop="14dp"
@@ -270,7 +276,7 @@
             android:layout_height="67dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/caring_profile" />
+            android:background="@drawable/msg_pro2" />
         <LinearLayout
             android:layout_marginLeft="119dp"
             android:layout_marginTop="14dp"
@@ -314,7 +320,7 @@
             android:layout_height="67dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/caring_profile" />
+            android:background="@drawable/msg_pro1" />
         <LinearLayout
             android:layout_marginLeft="119dp"
             android:layout_marginTop="14dp"
@@ -322,7 +328,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
-                android:text="스트라이트"
+                android:text="커스텀 개러지"
                 android:textSize="20dp"
                 android:textColor="@color/caring_blue_grey6"
                 android:textStyle="bold"

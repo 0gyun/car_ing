@@ -1,294 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".owlCustom">
-    <LinearLayout
-        android:orientation="vertical"
+    <FrameLayout
         android:layout_width="match_parent"
+        android:layout_height="600dp">
+        <ImageView
+            android:background="@drawable/owl_img1"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/owl_img2"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"/>
+    </FrameLayout>
+    <ImageView
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/caring_blue_grey4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="360dp"
-            android:background="@drawable/owl_custom_photo" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/TV1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="20dp"
-                        android:text="올빼미커스텀"
-                        android:textColor="@color/black"
-                        android:textSize="27dp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="23dp"
-                        android:background="@drawable/bookmark" />
-
-                    <ImageView
-                        android:layout_width="23dp"
-                        android:layout_height="27dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="23dp"
-                        android:background="@drawable/share" />
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:text="외장 튜닝 / 래핑 / PPF"
-                    android:textSize="9dp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/ic_baseline_star_yellow" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="5.0"
-                        android:layout_marginTop="2dp"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="140dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/partner" />
-        </LinearLayout>
-        <com.google.android.material.tabs.TabLayout
-            android:layout_marginTop="10dp"
-            android:id="@+id/TL"
-            app:tabTextAppearance="@style/tabTextSizeBold"
-            app:tabTextColor="@color/black"
-            app:tabSelectedTextColor="@color/caring_main_tonedown2"
-            android:layout_marginLeft="20dp"
-            android:layout_width="match_parent"
-            android:layout_marginRight="180dp"
-            app:tabIndicatorGravity="bottom"
-            app:tabGravity="fill"
-            app:tabIndicatorColor="@color/caring_main_tonedown2"
-            app:tabMode="fixed"
-            android:layout_height="50dp"/>
-
-        <androidx.viewpager.widget.ViewPager
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:id="@+id/VP"
-            android:layout_width="match_parent"
-            android:layout_height="140dp" />
-
-        <ImageView
-            android:background="#9CA4C3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"/>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_height="wrap_content">
-            <TextView
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/caring_blue_grey6"
-                android:text="리뷰(25)"
-                android:textSize="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <ImageButton
-                android:id="@+id/review_show_btn"
-                android:layout_marginTop="7dp"
-                android:layout_marginLeft="340dp"
-                android:background="@drawable/right_button"
-                android:layout_width="7dp"
-                android:layout_height="10dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/review"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="80dp"
-                    app:cardCornerRadius="15dp"
-                    android:layout_height="80dp">
-                    <ImageView
-                        android:background="@drawable/review_img1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-                </androidx.cardview.widget.CardView>
-                <LinearLayout
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textSize="10dp"
-                            android:textColor="@color/black"
-                            android:text="강태균"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_marginLeft="10dp"
-                            android:text="알칸타라 천장커버"
-                            android:textSize="9dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_marginTop="2dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/>
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/>
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/><ImageView
-                        android:background="@drawable/ic_baseline_star_yellow"
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"/>
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/>
-                    </LinearLayout>
-                    <TextView
-                        android:layout_marginTop="2dp"
-                        android:textColor="@color/black"
-                        android:textSize="10dp"
-                        android:text="최고의 퀄리티는 기본이고 ~ 너무 친절해요"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="25dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="80dp"
-                    app:cardCornerRadius="15dp"
-                    android:layout_height="80dp">
-                    <ImageView
-                        android:background="@drawable/review_img2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-                </androidx.cardview.widget.CardView>
-                <LinearLayout
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="15dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textSize="10dp"
-                            android:textColor="@color/black"
-                            android:text="산들바람"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <TextView
-                            android:layout_marginLeft="10dp"
-                            android:text="차박 개조"
-                            android:textSize="9dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_marginTop="2dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/>
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/>
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/><ImageView
-                        android:background="@drawable/ic_baseline_star_yellow"
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"/>
-                        <ImageView
-                            android:background="@drawable/ic_baseline_star_yellow"
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"/>
-                    </LinearLayout>
-                    <TextView
-                        android:layout_marginTop="2dp"
-                        android:textColor="@color/black"
-                        android:textSize="10dp"
-                        android:text="두대째 여기서 합니다ㅎㅎ"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+            android:background="@drawable/owl_img3"
+            android:layout_width="380dp"
+            android:layout_height="28dp"/>
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/owl_img4"
+            android:layout_width="45dp"
+            android:layout_height="14dp"/>
     </LinearLayout>
-</ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:background="@drawable/owl_img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/owl_img7"
+            android:layout_width="120dp"
+            android:layout_height="55dp"/>
+    </FrameLayout>
+</LinearLayout>
