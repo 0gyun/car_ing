@@ -4,9 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
-import kr.co.iruy.car_ing.Adapter.MyPagerAdapter
 
 class owlCustom : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.RelativeLayout
-import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.kofigyan.stateprogressbar.StateProgressBar
 
@@ -25,24 +24,15 @@ class StudyFragment : Fragment() {
         val startButton2 = v.findViewById<ImageButton>(R.id.startIB2)
 
         startButton1.setOnClickListener{
-            stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.ONE)
-            val intent = Intent(getActivity(), Tuto1Activity::class.java)
+            val intent = Intent(getActivity(), NewtutoActivity::class.java)
             getActivity()?.startActivity(intent)
+            stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.ONE)
         }
         startButton2.setOnClickListener{
-            stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.TWO)
-            val intent = Intent(getActivity(), Tuto2Activity::class.java)
+            val intent = Intent(getActivity(), Newtuto2Activity::class.java)
             getActivity()?.startActivity(intent)
+            stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.TWO)
         }
         return v
-    }
-    companion object{
-        fun newInstant() : StudyFragment
-        {
-            val args = Bundle()
-            val frag = StudyFragment()
-            frag.arguments = args
-            return frag
-        }
     }
 }
