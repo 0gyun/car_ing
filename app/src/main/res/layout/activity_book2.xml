@@ -82,6 +82,7 @@
         android:layout_marginRight="43dp"
         android:layout_height="50dp">
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/book2"
             android:text="2021년 2월 29에 시공 예약하기"
             android:textStyle="bold"
             android:textColor="@color/caring_blue_grey6"

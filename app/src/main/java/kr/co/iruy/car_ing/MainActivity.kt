@@ -28,7 +28,9 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.background_splash)
 
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            val intentt = Intent(this,MainActivity::class.java)
+            intentt.putExtra("시작위치","0")
+            startActivity(intentt)
             finish()
         }, 3000)
 
@@ -216,7 +218,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        val startType = intent.getStringExtra("시작위치")
         //하단 버튼
         var bnv = findViewById(R.id.bnv) as BottomNavigationView
         bnv.itemIconTintList = null;
@@ -246,12 +248,23 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-            selectedItemId = R.id.homeBT
+            if (startType == "0"){
+                selectedItemId = R.id.homeBT
+            }
+            else if(startType == "1"){
+                selectedItemId = R.id.storeBT
+            }
+            else if(startType == "2"){
+                selectedItemId = R.id.storeBT
+            }
+            else{
+                selectedItemId = R.id.homeBT
+            }
         }
     }
     // 뒤로 가기 버튼 막기
     override fun onBackPressed() {
-        super.onBackPressed() //막고 싶으면 여기 주석처리
+        //super.onBackPressed() //막고 싶으면 여기 주석처리
     }
 }
 
