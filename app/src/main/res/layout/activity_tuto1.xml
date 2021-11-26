@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@drawable/school_image1"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/tuto1_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_back_button" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tuto1_title"
+            android:layout_alignStart="@id/tuto1_back_btn"
+            android:paddingBottom="2dp"
+            android:text="stage1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tuto1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tuto1_text_explain"
+            android:layout_marginBottom="10dp"
+            android:text="카잉 튜토리얼"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tuto1_text_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tuto1_back_btn"
+            android:layout_alignParentBottom="true"
+            android:text="은수님은 카잉 기초 사용법을 배우는 중..."
+            android:textColor="@color/caring_blue_grey1"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/star_num"
+            android:layout_marginEnd="3dp"
+            android:layout_toLeftOf="@id/star_num"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_baseline_star_yellow" />
+
+        <TextView
+            android:id="@+id/star_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tuto1_title"
+            android:layout_alignBottom="@id/tuto1_title"
+            android:layout_alignParentEnd="true"
+            android:text="3 / 12"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tuto1_star_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="별 혜택관 가기 >"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="35dp">
+
+        <RelativeLayout
+            android:id="@+id/t1_stage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t1_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 1"
+                android:textColor="@color/caring_blue_grey8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t1_step1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_step1"
+                android:text="홈 화면 파헤쳐보기"
+                android:textColor="@color/caring_blue_grey8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/t1_stage1_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/t1_step1"
+                android:layout_marginStart="-15dp"
+                android:layout_toRightOf="@id/t1_step1_title"
+                app:srcCompat="@drawable/ic_clear" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/t1_stage1_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:cardBackgroundColor="@color/caring_blue_grey8"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+                        android:id="@+id/t1_stage1_star1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage1_star2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage1_star3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_stage1_star"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/caring_blue_grey4"
+                android:text="다시 배우기"
+                android:textColor="@color/caring_blue_grey5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/t1_stage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1_stage1">
+
+            <TextView
+                android:id="@+id/t1_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 2"
+                android:textColor="@color/caring_blue_grey8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t1_step2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_step2"
+                android:text="스토어 이용하기"
+                android:textColor="@color/caring_blue_grey8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/t1_stage2_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:cardBackgroundColor="@color/caring_blue_grey8"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+                        android:id="@+id/t1_stage2_star1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage2_star2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage2_star3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/t1_stage2_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_stage2_star"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/caring_main"
+                android:text="학습 시작하기"
+                android:textColor="@color/caring_blue_grey8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/t1_stage3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1_stage2">
+
+            <TextView
+                android:id="@+id/t1_step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 3"
+                android:textColor="@color/caring_blue_grey8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t1_step3_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_step3"
+                android:text="튜닝샵 알아보기"
+                android:textColor="@color/caring_blue_grey8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/t1_stage3_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:cardBackgroundColor="@color/caring_blue_grey8"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+                        android:id="@+id/t1_stage3_star1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage3_star2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage3_star3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/t1_stage3_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_stage3_star"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/caring_main"
+                android:text="학습 시작하기"
+                android:textColor="@color/caring_blue_grey8" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/t1_stage4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1_stage3">
+
+            <TextView
+                android:id="@+id/t1_step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STEP 4"
+                android:textColor="@color/caring_blue_grey8"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t1_step4_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_step4"
+                android:text="프로필 관리하기"
+                android:textColor="@color/caring_blue_grey8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/t1_stage4_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:cardBackgroundColor="@color/caring_blue_grey8"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+                        android:id="@+id/t1_stage4_star1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage4_star2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/t1_stage4_star3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/ic_baseline_star_yellow"
+                        app:tint="@color/white" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/t1_stage4_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1_stage4_star"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/caring_main"
+                android:text="학습 시작하기"
+                android:textColor="@color/caring_blue_grey8" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="STAGE 1 전체 CLEAR 시 OPEN"
+        android:textColor="@color/caring_blue_grey4" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/t1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp">
+
+        <ImageButton
+            android:id="@+id/t1_btn_to_t2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/caring_blue_grey1"
+            android:onClick="startOn" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:text="STAGE 2  "
+                android:textAlignment="center"
+                android:textColor="@color/caring_blue_grey2"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="메이커 입문하기"
+                android:textColor="@color/caring_blue_grey2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  로 이동하기"
+                android:textColor="@color/caring_blue_grey2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/t1_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

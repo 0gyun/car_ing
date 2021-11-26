@@ -1,11 +1,13 @@
 package kr.co.iruy.car_ing
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.RelativeLayout
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.kofigyan.stateprogressbar.StateProgressBar
 
@@ -21,13 +23,17 @@ class StudyFragment : Fragment() {
         stateProgressBar.setStateDescriptionData(list)
         val startButton1 = v.findViewById<ImageButton>(R.id.startIB1)
         val startButton2 = v.findViewById<ImageButton>(R.id.startIB2)
+
         startButton1.setOnClickListener{
             stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.ONE)
+            val intent = Intent(getActivity(), Tuto1Activity::class.java)
+            getActivity()?.startActivity(intent)
         }
         startButton2.setOnClickListener{
             stateProgressBar.setCurrentStateNumber(StateProgressBar.StateNumber.TWO)
+            val intent = Intent(getActivity(), Tuto2Activity::class.java)
+            getActivity()?.startActivity(intent)
         }
-
         return v
     }
     companion object{
