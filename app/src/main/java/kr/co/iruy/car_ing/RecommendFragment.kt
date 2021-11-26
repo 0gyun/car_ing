@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 
@@ -36,6 +37,13 @@ class RecommendFragment : Fragment() {
         item2_cost.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG)
         val item3_cost = view.findViewById<TextView>(R.id.item3_cost)
         item3_cost.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG)
+
+        val makerBT = view.findViewById<AppCompatButton>(R.id.makerBT)
+        makerBT.setOnClickListener{
+            val intent = Intent(getActivity(), ModelActivity::class.java)
+            getActivity()?.startActivity(intent)
+        }
+
         return view
     }
     companion object{

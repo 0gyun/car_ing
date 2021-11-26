@@ -15,5 +15,10 @@ class owlCustom : AppCompatActivity() {
             val intent = Intent(this, MsgActivity::class.java)
             startActivity(intent)
         }
+        val btn3 = findViewById<ImageButton>(R.id.btn3)
+        btn3.setOnClickListener {
+            val intent = Intent(this, Book2Activity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -50,7 +50,7 @@
         android:layout_marginLeft="20dp"
         android:background="@drawable/inte_img1"
         android:layout_width="match_parent"
-        android:layout_height="24dp"/>
+        android:layout_height="27dp"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn1"
         android:layout_marginTop="30dp"
