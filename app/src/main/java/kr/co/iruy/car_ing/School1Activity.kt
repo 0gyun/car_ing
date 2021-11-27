@@ -16,8 +16,8 @@ class School1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_school1)
-        val layout1 = findViewById<LinearLayout>(R.id.layout1)
-        layout1.setOnClickListener{
+        val to_21 = findViewById<ImageButton>(R.id.to_21)
+        to_21.setOnClickListener{
             val intent = Intent(this, School1_2Activity::class.java)
             startActivity(intent)
             overridePendingTransition(0,0)
