@@ -102,7 +102,7 @@
                 android:id="@+id/t2_step1_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/t1_step1"
+                android:layout_below="@+id/t2_step1"
                 android:text="내 차 불러오기"
                 android:textColor="@color/caring_blue_grey8"
                 android:textSize="20sp"

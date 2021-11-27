@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Car_ing"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".School1_2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".School1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Newtuto2Activity"
             android:exported="false" />
         <activity
