@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/caring_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/caring_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Car_ing"
         android:usesCleartextTraffic="true">

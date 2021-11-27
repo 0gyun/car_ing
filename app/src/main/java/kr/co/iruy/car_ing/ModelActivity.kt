@@ -11,6 +11,7 @@ import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.LinearLayout
 
 class ModelActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,8 @@ class ModelActivity : AppCompatActivity() {
         val bt = findViewById<ImageButton>(R.id.bt)
         val iv1 = findViewById<ImageView>(R.id.iv1)
         val iv2 = findViewById<ImageView>(R.id.iv2)
-        val item_view = findViewById<ImageView>(R.id.item_view)
+        val item_view = findViewById<LinearLayout>(R.id.item_view)
+        val xBT = findViewById<ImageButton>(R.id.xBT)
 
         item_view.visibility = View.INVISIBLE
         bt.setOnClickListener{
@@ -29,6 +31,14 @@ class ModelActivity : AppCompatActivity() {
             bt.visibility = View.INVISIBLE
             item_view.visibility = View.VISIBLE
         }
+
+        xBT.setOnClickListener {
+            iv1.visibility = View.VISIBLE
+            iv2.visibility = View.VISIBLE
+            bt.visibility = View.VISIBLE
+            item_view.visibility = View.INVISIBLE
+        }
+
 
         val wv_main = findViewById<WebView>(R.id.webview)
         wv_main.webChromeClient = WebChromeClient()

@@ -114,7 +114,7 @@
                         android:id="@+id/today_profile"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        tools:srcCompat="@drawable/profile_person" />
+                        android:background="@drawable/pro1" />
                 </androidx.cardview.widget.CardView>
 
             </RelativeLayout>

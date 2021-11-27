@@ -6,70 +6,81 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".interiorActivity">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolBar"
-        android:layout_width="match_parent"
-        android:layout_height="90dp">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="26dp"
-            android:paddingRight="9dp"
-            android:adjustViewBounds="true"
-            android:src="@mipmap/caring" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <SearchView
-                android:id="@+id/searchView"
-                style="@style/MySearchViewStyle"
-                android:layout_width="170dp"
-                android:layout_height="50dp"
-                android:layout_alignParentStart="true"
-                android:layout_toStartOf="@id/imageView"
-                android:background="@drawable/bg_rounded_search_yellow"
-                android:focusable="false"
-                android:focusableInTouchMode="false" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="30dp"
-                android:layout_height="32dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="15dp"
-                app:srcCompat="@drawable/reminder" />
+                android:layout_width="100dp"
+                android:layout_height="26dp"
+                android:paddingRight="9dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/caring" />
 
-        </RelativeLayout>
-    </androidx.appcompat.widget.Toolbar>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    style="@style/MySearchViewStyle"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/imageView"
+                    android:background="@drawable/bg_rounded_search_yellow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:srcCompat="@drawable/reminder" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:layout_marginRight="150dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/inte_img1"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shop_info1"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/shop_info2"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/shop_info3"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/shop_info4"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+    </LinearLayout>
     <ImageView
-        android:layout_marginRight="150dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/inte_img1"
+        android:background="@drawable/slice_bottom"
+        android:layout_gravity="bottom"
         android:layout_width="match_parent"
-        android:layout_height="27dp"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn1"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/shop_info1"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="-40dp"
-        android:background="@drawable/shop_info2"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="-40dp"
-        android:background="@drawable/shop_info3"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="-40dp"
-        android:background="@drawable/shop_info4"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"/>
+        android:layout_height="100dp"/>
 </LinearLayout>
