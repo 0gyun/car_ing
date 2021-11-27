@@ -26,7 +26,7 @@
             android:layout_above="@id/tuto2_title"
             android:layout_alignStart="@id/tuto2_back_btn"
             android:paddingBottom="2dp"
-            android:text="stage2"
+            android:text="STAGE 2"
             android:textColor="@color/white" />
 
         <TextView
@@ -85,10 +85,60 @@
         android:layout_height="wrap_content"
         android:padding="35dp">
 
+        <ImageView
+            android:id="@+id/t2_dot1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:srcCompat="@drawable/ic_dot" />
+
+        <ImageView
+            android:id="@+id/t2_bar1"
+            android:layout_width="15dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/t2_dot1"
+            app:srcCompat="@drawable/ic_bar" />
+
+        <ImageView
+            android:id="@+id/t2_dot2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/t2_bar1"
+            app:srcCompat="@drawable/ic_dot" />
+
+        <ImageView
+            android:id="@+id/t2_bar2"
+            android:layout_width="15dp"
+            android:layout_height="63dp"
+            android:layout_below="@id/t2_dot2"
+            app:srcCompat="@drawable/ic_bar" />
+
+        <ImageView
+            android:id="@+id/t2_dot3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/t2_bar2"
+            app:srcCompat="@drawable/ic_dot" />
+
+        <ImageView
+            android:id="@+id/t2_bar3"
+            android:layout_width="15dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/t2_dot3"
+            app:srcCompat="@drawable/ic_bar" />
+
+        <ImageView
+            android:id="@+id/t2_dot4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/t2_bar3"
+            app:srcCompat="@drawable/ic_dot" />
+
         <RelativeLayout
             android:id="@+id/t2_stage1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/t2_dot1">
 
             <TextView
                 android:id="@+id/t2_step1"
@@ -170,7 +220,9 @@
             android:id="@+id/t2_stage2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/t2_stage1">
+            android:layout_below="@id/t2_stage1"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/t2_dot2">
 
             <TextView
                 android:id="@+id/t2_step2"
@@ -246,7 +298,9 @@
             android:id="@+id/t2_stage3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/t2_stage2">
+            android:layout_below="@id/t2_stage2"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/t2_dot3">
 
             <TextView
                 android:id="@+id/t2_step3"
@@ -322,7 +376,9 @@
             android:id="@+id/t2_stage4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/t2_stage3">
+            android:layout_below="@id/t2_stage3"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/t2_dot4">
 
             <TextView
                 android:id="@+id/t2_step4"
