@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import androidx.cardview.widget.CardView
 
 class owlCustom : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class owlCustom : AppCompatActivity() {
             val intent = Intent(this, MsgActivity::class.java)
             startActivity(intent)
         }
-        val btn3 = findViewById<ImageButton>(R.id.btn3)
+        val btn3 = findViewById<CardView>(R.id.btn3)
         btn3.setOnClickListener {
             val intent = Intent(this, Book2Activity::class.java)
             startActivity(intent)

@@ -92,7 +92,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </androidx.cardview.widget.CardView>
-                <androidx.caㅈㄷrdview.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_width="match_parent"
@@ -126,8 +126,7 @@
                         android:text="제품가 300,000 ~ 400,000\n공임 200,000 ~ 300,000"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
-                </androidx.caㅈㄷrdview.widget.CardView>
-
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
         </ScrollView>
         <ImageButton
