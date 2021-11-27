@@ -19,6 +19,9 @@
             android:name=".School1Activity"
             android:exported="false" />
         <activity
+            android:name=".School2Activity"
+            android:exported="false" />
+        <activity
             android:name=".Newtuto2Activity"
             android:exported="false" />
         <activity

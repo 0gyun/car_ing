@@ -14,5 +14,10 @@ class Newtuto2Activity : AppCompatActivity() {
             val intent = Intent(this, School1Activity::class.java)
             startActivity(intent)
         }
+        val btn2 = findViewById<Button>(R.id.t2_stage2_btn)
+        btn2.setOnClickListener {
+            val intent = Intent(this, School2Activity::class.java)
+            startActivity(intent)
+        }
     }
 }
