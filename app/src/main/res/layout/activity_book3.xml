@@ -28,8 +28,7 @@
                     android:layout_height="35dp"
                     android:layout_marginLeft="145dp"
                     android:layout_marginTop="21dp"
-                    android:layout_marginRight="110dp"
-                    android:background="@drawable/book3" />
+                    android:layout_marginRight="110dp" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"

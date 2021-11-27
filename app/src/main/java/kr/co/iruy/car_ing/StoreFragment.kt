@@ -1,9 +1,11 @@
 package kr.co.iruy.car_ing
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
@@ -19,7 +21,13 @@ class StoreFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-       return inflater.inflate(R.layout.fragment_store,container,false)
+        val view = inflater.inflate(R.layout.fragment_store,container,false)
+        val goMaker = view.findViewById<CardView>(R.id.goMaker)
+        goMaker.setOnClickListener{
+            val intent = Intent(getActivity(), ModelActivity::class.java)
+            getActivity()?.startActivity(intent)
+        }
+        return view
     }
     companion object{
         fun newInstant() : SqaureFragment
