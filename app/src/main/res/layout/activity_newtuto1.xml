@@ -212,9 +212,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/t1_stage1_star"
                 android:layout_alignParentEnd="true"
-                android:backgroundTint="@color/caring_blue_grey4"
-                android:text="다시 배우기"
-                android:textColor="@color/caring_blue_grey5" />
+                android:backgroundTint="@color/caring_main"
+                android:text="학습 시작하기"
+                android:textColor="@color/caring_blue_grey8" />
         </RelativeLayout>
 
         <RelativeLayout

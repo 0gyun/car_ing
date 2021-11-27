@@ -63,7 +63,8 @@
                     android:layout_below="@id/imageView9"
                     android:layout_centerHorizontal="true"
                     app:cardBackgroundColor="@color/caring_main"
-                    app:cardCornerRadius="20dp">
+                    app:cardCornerRadius="20dp"
+                    android:clickable="true">
 
 
                     <LinearLayout

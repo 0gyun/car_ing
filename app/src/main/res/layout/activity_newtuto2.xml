@@ -67,7 +67,7 @@
             android:layout_alignBaseline="@id/tuto2_title"
             android:layout_alignBottom="@id/tuto2_title"
             android:layout_alignParentEnd="true"
-            android:text="3 / 12"
+            android:text="0 / 12"
             android:textColor="@color/white" />
 
         <TextView
@@ -167,43 +167,12 @@
                 android:layout_toRightOf="@id/t2_step1_title"
                 app:srcCompat="@drawable/ic_clear" />
 
-            <androidx.cardview.widget.CardView
+            <ImageView
                 android:id="@+id/t2_stage1_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
-                app:cardBackgroundColor="@color/caring_blue_grey8"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingStart="10dp"
-                    android:paddingTop="2dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="2dp">
-
-                    <ImageView
-                        android:id="@+id/t2_stage1_star1"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage1_star2"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage1_star3"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                app:srcCompat="@drawable/ic_star_empty" />
 
             <Button
                 android:id="@+id/button"
@@ -211,9 +180,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/t2_stage1_star"
                 android:layout_alignParentEnd="true"
-                android:backgroundTint="@color/caring_blue_grey4"
+                android:backgroundTint="@color/caring_main"
                 android:text="학습 시작하기"
-                android:textColor="@color/caring_blue_grey5" />
+                android:textColor="@color/caring_blue_grey8" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -242,46 +211,12 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <androidx.cardview.widget.CardView
+            <ImageView
                 android:id="@+id/t2_stage2_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
-                app:cardBackgroundColor="@color/caring_blue_grey8"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingStart="10dp"
-                    android:paddingTop="2dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="2dp">
-
-                    <ImageView
-                        android:id="@+id/t2_stage2_star1"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage2_star2"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage2_star3"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                app:srcCompat="@drawable/ic_star_empty" />
 
             <Button
                 android:id="@+id/t2_stage2_btn"
@@ -320,46 +255,12 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <androidx.cardview.widget.CardView
+            <ImageView
                 android:id="@+id/t2_stage3_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
-                app:cardBackgroundColor="@color/caring_blue_grey8"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingStart="10dp"
-                    android:paddingTop="2dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="2dp">
-
-                    <ImageView
-                        android:id="@+id/t2_stage3_star1"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage3_star2"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage3_star3"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                app:srcCompat="@drawable/ic_star_empty" />
 
             <Button
                 android:id="@+id/t2_stage3_btn"
@@ -398,46 +299,12 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <androidx.cardview.widget.CardView
+            <ImageView
                 android:id="@+id/t2_stage4_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
-                app:cardBackgroundColor="@color/caring_blue_grey8"
-                app:cardCornerRadius="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:paddingStart="10dp"
-                    android:paddingTop="2dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="2dp">
-
-                    <ImageView
-                        android:id="@+id/t2_stage4_star1"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage4_star2"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-
-                    <ImageView
-                        android:id="@+id/t2_stage4_star3"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        app:srcCompat="@drawable/ic_baseline_star_yellow"
-                        app:tint="@color/white" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                app:srcCompat="@drawable/ic_star_empty" />
 
             <Button
                 android:id="@+id/t2_stage4_btn"
@@ -471,8 +338,7 @@
             android:id="@+id/t2_btn_to_t3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@color/caring_blue_grey1"
-            android:onClick="startOn" />
+            android:background="@color/caring_blue_grey1"/>
 
         <LinearLayout
             android:layout_width="wrap_content"

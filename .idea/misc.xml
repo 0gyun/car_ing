@@ -53,6 +53,8 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_profile.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_store.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_selected_tuning_shop.xml" value="0.35625" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_star_empty.xml" value="0.24375" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_star_full.xml" value="0.12395833333333334" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_home.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_message.xml" value="0.35625" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/drawable/ic_unselected_profile.xml" value="0.35625" />
@@ -75,17 +77,22 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/font/noto_sans_light.xml" value="0.37447916666666664" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_book1.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_feed.xml" value="0.1" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_interior.xml" value="0.2234375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_login.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_main.xml" value="0.18888888888888888" />
-        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_newtuto1.xml" value="0.264" />
-        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_newtuto2.xml" value="0.152" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_newtuto1.xml" value="0.152" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_newtuto2.xml" value="0.3116883116883117" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_newtuto2_1.xml" value="0.2234375" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_owl_custom.xml" value="0.2234375" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_school1.xml" value="0.2234375" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_school12.xml" value="0.10364583333333334" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_school2.xml" value="0.2234375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_search.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_signup.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_tendency.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_test.xml" value="0.33" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_tuto1.xml" value="0.13886210221793635" />
-        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_tuto2.xml" value="0.176" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/activity_tuto2.xml" value="0.2" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/back_splash.xml" value="0.22" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/background_splash.xml" value="0.16" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/feed.xml" value="0.25934065934065936" />
@@ -95,6 +102,7 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_garage.xml" value="0.3359375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_home.xml" value="0.24147727272727273" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_monthly_caring.xml" value="0.14074074074074075" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_my_item.xml" value="0.1" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_plaza.xml" value="0.3259668508287293" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_popular_feed.xml" value="0.1" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
@@ -107,6 +115,7 @@
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_sup1.xml" value="0.16510416666666666" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_sup2.xml" value="0.16510416666666666" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_today_caring.xml" value="0.2234375" />
+        <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_trend.xml" value="0.2234375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_tuning_around.xml" value="0.2234375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_tuning_favorites.xml" value="0.2234375" />
         <entry key="..\:/Users/yklee/AndroidStudioProjects/car_ing2/app/src/main/res/layout/fragment_tuning_field.xml" value="0.2234375" />
