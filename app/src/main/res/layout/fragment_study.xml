@@ -197,7 +197,7 @@
                             android:id="@+id/startIB2"
                             android:layout_width="180dp"
                             android:layout_height="40dp"
-                            android:background="@color/caring_blue_grey1" />
+                            android:background="@color/caring_main" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -205,16 +205,10 @@
                             android:layout_marginTop="6dp"
                             android:text="STAGE2 입장"
                             android:textAlignment="center"
-                            android:textColor="@color/caring_blue_grey2"
+                            android:textColor="@color/caring_blue_grey8"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/stage2_lock"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_lock" />
                     </androidx.cardview.widget.CardView>
 
                 </RelativeLayout>
@@ -284,7 +278,7 @@
                             android:id="@+id/startIB3"
                             android:layout_width="180dp"
                             android:layout_height="40dp"
-                            android:background="@color/caring_blue_grey1"/>
+                            android:background="@color/caring_main" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -292,16 +286,10 @@
                             android:layout_marginTop="6dp"
                             android:text="STAGE3 입장"
                             android:textAlignment="center"
-                            android:textColor="@color/caring_blue_grey2"
+                            android:textColor="@color/caring_blue_grey8"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/stage3_lock"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_lock" />
                     </androidx.cardview.widget.CardView>
 
                 </RelativeLayout>
@@ -371,7 +359,7 @@
                             android:id="@+id/startIB4"
                             android:layout_width="180dp"
                             android:layout_height="40dp"
-                            android:background="@color/caring_blue_grey1"/>
+                            android:background="@color/caring_main" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -379,16 +367,10 @@
                             android:layout_marginTop="6dp"
                             android:text="STAGE2 입장"
                             android:textAlignment="center"
-                            android:textColor="@color/caring_blue_grey2"
+                            android:textColor="@color/caring_blue_grey8"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/stage4_lock"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_lock" />
                     </androidx.cardview.widget.CardView>
 
                 </RelativeLayout>
@@ -458,7 +440,7 @@
                             android:id="@+id/startIB5"
                             android:layout_width="180dp"
                             android:layout_height="40dp"
-                            android:background="@color/caring_blue_grey1"/>
+                            android:background="@color/caring_main" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -466,16 +448,10 @@
                             android:layout_marginTop="6dp"
                             android:text="STAGE5 입장"
                             android:textAlignment="center"
-                            android:textColor="@color/caring_blue_grey2"
+                            android:textColor="@color/caring_blue_grey8"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/stage5_lock"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_lock" />
                     </androidx.cardview.widget.CardView>
 
                 </RelativeLayout>
