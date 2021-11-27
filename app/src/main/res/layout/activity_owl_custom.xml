@@ -123,7 +123,7 @@
                         android:textSize="15dp"
                         android:layout_marginLeft="140dp"
                         android:layout_marginTop="55dp"
-                        android:text="제품가 300,000 ~ 400,000\n공임 200,000 ~ 300,000"
+                        android:text="제품가 100,000 ~600,000\n공임 300,000 ~ 400,000"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </androidx.cardview.widget.CardView>
@@ -131,11 +131,11 @@
         </ScrollView>
         <ImageButton
             android:id="@+id/btn2"
-            android:layout_marginBottom="120dp"
+            android:layout_marginBottom="60dp"
             android:layout_marginRight="20dp"
             android:layout_gravity="bottom|right"
             android:background="@drawable/owl_img7"
-            android:layout_width="120dp"
-            android:layout_height="55dp"/>
+            android:layout_width="140dp"
+            android:layout_height="63dp"/>
     </FrameLayout>
 </LinearLayout>
